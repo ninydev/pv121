@@ -1,20 +1,42 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+// Модуль для работы с веб сервером
+let express = require('express');
+let app = express();
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 
-var app = express();
-
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
+// Для работы с папками
+let path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
+// Cookies
+let cookieParser = require('cookie-parser');
+app.use(cookieParser());
+
+
+// Ведение Log данных
+let logger = require('morgan');
+app.use(logger('dev'));
+
+
+// Поддержка Json и кодировок
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+
+// Для обработки объектов в body
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+
+
+// Машрутизация
+let postsRouter = require('./routes/posts')
+app.use('/api/posts', postsRouter)
+
+// let indexRouter = require('./routes/index');
+// let usersRouter = require('./routes/users');
+// app.use('/', indexRouter);
+// app.use('/users', usersRouter);
+
+
+// Экспорт настроек в главный файл
 module.exports = app;
