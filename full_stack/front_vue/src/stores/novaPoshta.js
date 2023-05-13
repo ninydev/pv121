@@ -9,7 +9,7 @@ import {toast} from "vue3-toastify";
  * В данном случае - хранилище будет для работы с информацией с новой почты
  * @type {StoreDefinition<"novaPohta", {}, {}, {}>}
  */
-export  const useNovaPoshta = defineStore('novaPohta', {
+export  const useNovaPoshtaStore = defineStore('novaPohta', {
     state: () => ({
         areas: [] // название для информации - тут будут области, полученные с новой почты
     }),

@@ -1,9 +1,9 @@
 <script setup>
-import {useNovaPoshta} from "@/stores/novaPoshta";
+import {useNovaPoshtaStore} from "@/stores/novaPoshta";
 import {onMounted} from "vue";
 
 
-const novaPostaStore = useNovaPoshta()
+const novaPostaStore = useNovaPoshtaStore()
 onMounted(() => {
   novaPostaStore.getAreas()
 })
