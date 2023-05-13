@@ -1,15 +1,10 @@
 <script setup>
 
-import {onMounted} from "vue";
-import {toast} from "vue3-toastify";
-
-onMounted(() => {
-    toast.info("Open Home Page")
-})
+import ListAreas from "@/components/NovaPoshta/Areas/ListAreas.vue";
 </script>
 
 <template>
   <main>
-
+    <ListAreas></ListAreas>
   </main>
 </template>

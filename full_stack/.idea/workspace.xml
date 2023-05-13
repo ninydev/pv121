@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Dockers">
-      <change afterPath="$PROJECT_DIR$/front_vue/src/services/myLog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/stores/novaPoshta.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/Типовое веб приложение" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/Типовое веб приложение" afterDir="false" />
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Nova Poshta">
+      <change afterPath="$PROJECT_DIR$/front_vue/src/components/NovaPoshta/Areas/ListAreas.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/components/TheWelcome.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/components/WelcomeItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/views/AboutView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/views/AboutView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front_vue/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/views/HomeView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/public/posts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/public/stylesheets/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
@@ -64,6 +52,11 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -81,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683990544843</updated>
-      <workItem from="1683990545851" duration="4108000" />
+      <workItem from="1683990545851" duration="4537000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -111,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683992242406</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Nova Poshta">
+      <created>1683994696759</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683994696759</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +122,7 @@
     <MESSAGE value="Start" />
     <MESSAGE value="Docker" />
     <MESSAGE value="Dockers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dockers" />
+    <MESSAGE value="Nova Poshta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nova Poshta" />
   </component>
 </project>
