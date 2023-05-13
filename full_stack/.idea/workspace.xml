@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Nova Poshta">
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/ExchangeApi/ExchangeApiList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/PrivatBank/PrivatBackExchange.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/stores/exchangerateApi/exchangerateApi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/stores/privatBank/privatBankExchange.js" afterDir="false" />
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Exchange">
+      <change afterPath="$PROJECT_DIR$/front_vue/src/components/MyAuth/RegisterForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front_vue/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/views/HomeView.vue" afterDir="false" />
     </list>
@@ -77,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683990544843</updated>
-      <workItem from="1683990545851" duration="7115000" />
+      <workItem from="1683990545851" duration="9189000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -128,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683995451885</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Exchange">
+      <created>1683997727872</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683997727872</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +144,7 @@
     <MESSAGE value="Docker" />
     <MESSAGE value="Dockers" />
     <MESSAGE value="Nova Poshta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nova Poshta" />
+    <MESSAGE value="Exchange" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exchange" />
   </component>
 </project>
