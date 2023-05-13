@@ -4,49 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Start">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/.eslintrc.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/.prettierrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/assets/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/TheWelcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/WelcomeItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/icons/IconCommunity.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/icons/IconDocumentation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/icons/IconEcosystem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/icons/IconSupport.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/icons/IconTooling.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/stores/counter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/views/AboutView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/views/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/vite.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/bin/www" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/controllers/postController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/public/posts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/public/stylesheets/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/routes/posts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/routes/users.js" afterDir="false" />
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Docker">
+      <change afterPath="$PROJECT_DIR$/front_vue/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_api/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683990544843</updated>
-      <workItem from="1683990545851" duration="1152000" />
+      <workItem from="1683990545851" duration="1508000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -109,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683990597792</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Docker">
+      <created>1683991711815</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683991711815</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +88,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start" />
+    <MESSAGE value="Docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker" />
   </component>
 </project>
