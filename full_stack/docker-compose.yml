@@ -1,0 +1,54 @@
+version: '3'
+services:
+
+  node.api:
+    build: ./node_api
+    volumes:
+      - ./node_api:/usr/src/app
+    #command: sh -c " npm install && npm start "
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    networks:
+      - pv121_network
+    ports:
+      - "3000:3000"
+    environment:
+      - NAME=NodeApi
+    env_file:
+      - .env
+
+
+  front.vue:
+    build: ./front_vue
+    volumes:
+      - ./front_vue:/usr/src/app
+    # command: sh -c " npm install && npm start "
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    networks:
+      - pv121_network
+    ports:
+      - "5173:5173"
+    environment:
+      - NAME=FrontVue
+    env_file:
+      - .env
+
+
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    networks:
+      - pv121_network
+    ports:
+      - "80:80"
+    depends_on:
+      - front.vue
+
+
+networks:
+  pv121_network:
+    driver: bridge
