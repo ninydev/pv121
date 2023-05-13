@@ -4,8 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Docker">
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Dockers">
+      <change afterPath="$PROJECT_DIR$/front_vue/src/services/myLog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_vue/src/stores/novaPoshta.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/Типовое веб приложение" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/Типовое веб приложение" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/components/TheWelcome.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/components/WelcomeItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/views/AboutView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/views/AboutView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/views/HomeView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_api/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_api/public/posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_api/public/stylesheets/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +29,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -59,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683990544843</updated>
-      <workItem from="1683990545851" duration="1609000" />
+      <workItem from="1683990545851" duration="4108000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -82,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683992061384</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Dockers">
+      <created>1683992242406</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683992242406</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +121,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Start" />
     <MESSAGE value="Docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Docker" />
+    <MESSAGE value="Dockers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dockers" />
   </component>
 </project>

@@ -1,3 +1,13 @@
+<script setup>
+
+import {onMounted} from "vue";
+import {toast} from "vue3-toastify";
+
+onMounted(() => {
+    toast.info("Open About Page")
+})
+</script>
+
 <template>
   <div class="about">
     <h1>This is an about page</h1>

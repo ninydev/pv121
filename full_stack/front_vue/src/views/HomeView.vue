@@ -1,9 +1,15 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+
+import {onMounted} from "vue";
+import {toast} from "vue3-toastify";
+
+onMounted(() => {
+    toast.info("Open Home Page")
+})
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+
   </main>
 </template>
