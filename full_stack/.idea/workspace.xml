@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Nova Poshta">
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/NovaPoshta/Areas/ListAreas.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_vue/src/components/ExchangeApi/ExchangeApiList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_vue/src/components/PrivatBank/PrivatBackExchange.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_vue/src/stores/exchangerateApi/exchangerateApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_vue/src/stores/privatBank/privatBankExchange.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front_vue/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/views/HomeView.vue" afterDir="false" />
     </list>
@@ -74,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683990544843</updated>
-      <workItem from="1683990545851" duration="4537000" />
+      <workItem from="1683990545851" duration="7115000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -111,7 +114,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683994696759</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Nova Poshta">
+      <created>1683995379104</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683995379104</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Nova Poshta">
+      <created>1683995451885</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683995451885</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
