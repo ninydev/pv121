@@ -19,7 +19,7 @@ export  const useExchangeApiStore = defineStore('exchangeApi',{
             // И обращаться - когда мы считаем их устаревшими
             if(d === null) {
                 this.isPreload = true
-                fetch('https://v6.exchangerate-api.com/v6/aeb293418c7c8bdbda9896fa/latest/USD')
+                fetch('/api/exchange')
                     .then(res => res.json())
                     .then(newExchange => {
                         toast.success('get')
