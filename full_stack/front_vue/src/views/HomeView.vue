@@ -8,6 +8,6 @@ import RegisterForm from "@/components/MyAuth/RegisterForm.vue";
 
 <template>
   <main>
-    <RegisterForm></RegisterForm>
+    <ExchangeApiList></ExchangeApiList>
   </main>
 </template>

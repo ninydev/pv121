@@ -11,7 +11,14 @@ onMounted( () => {
 
 <template>
   <h1>{{exchangeStore.data.base_code}}</h1>
-  <ul>
+  <div v-if="exchangeStore.isPreload">
+    Происходит загрузка данных
+  </div>
+  <div v-else-if="exchangeStore.isError">
+    Произошла ошибка при запросе данных
+    {{exchangeStore.error}}
+  </div>
+  <ul v-else>
       <li v-for="e in exchangeStore.data.conversion_rates">
           {{ e }}
       </li>
