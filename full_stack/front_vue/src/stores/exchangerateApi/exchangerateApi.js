@@ -2,6 +2,7 @@ import {defineStore} from "pinia";
 import {toast} from "vue3-toastify";
 import myLog from "@/services/myLog";
 import myLocalStorage from "@/services/myLocalStorage";
+import myFetch from "@/services/myFetch";
 
 
 export  const useExchangeApiStore = defineStore('exchangeApi',{
@@ -19,22 +20,38 @@ export  const useExchangeApiStore = defineStore('exchangeApi',{
             // И обращаться - когда мы считаем их устаревшими
             if(d === null) {
                 this.isPreload = true
-                fetch('/api/exchange')
-                    .then(res => res.json())
+
+                myFetch('/api/exchange')
                     .then(newExchange => {
-                        toast.success('get')
                         this.data = newExchange
                         myLocalStorage.setItem('ExchangeApiStoreData', newExchange)
                         this.whenLoad = new Date().toLocaleString()
                         myLocalStorage.setItem('ExchangeApiStoreWhen', this.whenLoad)
                         this.isPreload = false
                     })
-                    .catch(error => {
+                    .catch(error=> {
                         this.isError = true
                         this.error = error
                         myLog(error)
                         toast.error(error.message)
                     })
+
+                // fetch('/api/exchange')
+                //     .then(res => res.json())
+                //     .then(newExchange => {
+                //         toast.success('get')
+                //         this.data = newExchange
+                //         myLocalStorage.setItem('ExchangeApiStoreData', newExchange)
+                //         this.whenLoad = new Date().toLocaleString()
+                //         myLocalStorage.setItem('ExchangeApiStoreWhen', this.whenLoad)
+                //         this.isPreload = false
+                //     })
+                //     .catch(error => {
+                //         this.isError = true
+                //         this.error = error
+                //         myLog(error)
+                //         toast.error(error.message)
+                //     })
             }
         }
     }
