@@ -21,7 +21,8 @@ export  const useExchangeApiStore = defineStore('exchangeApi',{
             if(d === null) {
                 this.isPreload = true
 
-                myFetch('/api/exchange')
+                //myFetch('/api/exchange')
+                myFetch('http://localhost:3000/api/exchange')
                     .then(newExchange => {
                         this.data = newExchange
                         myLocalStorage.setItem('ExchangeApiStoreData', newExchange)
