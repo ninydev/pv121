@@ -4,6 +4,7 @@ const pageTitle = "About Page"
 </script>
 
 <template>
+  <!-- передача параметра pageTitle (props) в секцию - аналог ViewData  -->
   <SiteBreadcrumbs :pageTitle=pageTitle></SiteBreadcrumbs>
   <!-- ======= Blog Section ======= -->
   <section class="inner-page">
@@ -22,11 +23,4 @@ const pageTitle = "About Page"
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
 </style>
