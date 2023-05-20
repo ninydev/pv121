@@ -26,6 +26,12 @@ const user = ref ({
   name: '', email: '', password: '', confirmPassword: ''
 })
 
+// Опишем нажатие на кнопку
+const sendToBack = () => {
+  authStore.doRegister(user.value)
+  return false
+}
+
 </script>
 
 <template>
@@ -36,7 +42,7 @@ const user = ref ({
       <div class="container">
         <div class="col-lg-6 align-justify-center pr-4 pl-0 contact-form">
           <div class="">
-            <form class="mt-3">
+            <form class="mt-3" @submit.prevent="sendToBack">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="form-group">

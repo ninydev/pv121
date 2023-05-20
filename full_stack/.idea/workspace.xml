@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Страница Регистрации Начало">
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="RegiserForm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front_vue/src/components/MyAuth/Forms/FormRegister.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/components/MyAuth/Forms/FormRegister.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/stores/auth/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/stores/auth/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,7 @@
       <workItem from="1683990545851" duration="9860000" />
       <workItem from="1684093207177" duration="772000" />
       <workItem from="1684335192172" duration="18080000" />
-      <workItem from="1684594712021" duration="4016000" />
+      <workItem from="1684594712021" duration="5129000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -185,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684597607576</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="RegiserForm">
+      <created>1684598849618</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684598849618</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +213,7 @@
     <MESSAGE value="Connect Design" />
     <MESSAGE value="Connect Design Комментарии" />
     <MESSAGE value="Страница Регистрации Начало" />
-    <option name="LAST_COMMIT_MESSAGE" value="Страница Регистрации Начало" />
+    <MESSAGE value="RegiserForm" />
+    <option name="LAST_COMMIT_MESSAGE" value="RegiserForm" />
   </component>
 </project>

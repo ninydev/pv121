@@ -1,4 +1,5 @@
 import {defineStore} from "pinia";
+import {toast} from "vue3-toastify";
 
 export  const useAuthStore = defineStore('auth', {
 
@@ -11,5 +12,9 @@ export  const useAuthStore = defineStore('auth', {
     }),
 
     actions: {
+        doRegister(newUser) {
+            console.log(newUser)
+            toast.info(newUser.name)
+        }
     }
 })
