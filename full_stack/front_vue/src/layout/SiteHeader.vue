@@ -1,4 +1,7 @@
 <script setup>
+import {useAuthStore} from "@/stores/auth/auth";
+
+const authStore = useAuthStore()
 </script>
 
 <template>
@@ -7,8 +10,6 @@
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
       <RouterLink to="/" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>HeroBiz<span>.</span></h1>
       </RouterLink>
 
@@ -16,6 +17,8 @@
         <ul>
           <li><RouterLink to="/">Home</RouterLink></li>
           <li><RouterLink to="/about">About</RouterLink></li>
+          <li v-if="!authStore.isLogin"><RouterLink to="/register">Register</RouterLink></li>
+          <li v-else>Logout</li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->

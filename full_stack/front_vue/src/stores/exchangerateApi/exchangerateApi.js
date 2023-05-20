@@ -9,7 +9,7 @@ export  const useExchangeApiStore = defineStore('exchangeApi',{
     state: () => ({
         isPreload: false, // сообщает фронту о том, что происходит загрузка данных
         isError: false, // переводит компонент в отображение ошибки
-        error: {}, // хранит данные о ошибке
+        error: {}, // хранит данные об ошибке
         whenLoad:  myLocalStorage.getItem('ExchangeApiStoreWhen') || null,
         data: myLocalStorage.getItem('ExchangeApiStoreData') || {}
     }),

@@ -4,10 +4,137 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Connect Design">
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Connect Design Комментарии">
+      <change afterPath="$PROJECT_DIR$/front_vue/src/components/MyAuth/Forms/FormChangePassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_vue/src/components/MyAuth/Forms/FormLogin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_vue/src/components/MyAuth/Forms/FormProfile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_vue/src/components/MyAuth/Forms/FormRegister.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_vue/src/stores/auth/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_vue/src/views/MyAuth/ChangePasswordView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_vue/src/views/MyAuth/EditProfileView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_vue/src/views/MyAuth/LoginView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_vue/src/views/MyAuth/RegisterView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/hero-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/portfolio/portfolio-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/portfolio/portfolio-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/portfolio/portfolio-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/portfolio/portfolio-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/portfolio/portfolio-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/portfolio/portfolio-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/portfolio/portfolio-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/portfolio/portfolio-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/portfolio/portfolio-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/portfolio/portfolio-details-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/portfolio/portfolio-details-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/portfolio/portfolio-details-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/profile-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/testimonials/testimonials-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/testimonials/testimonials-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/testimonials/testimonials-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/testimonials/testimonials-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/img/testimonials/testimonials-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/scss/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/aos/aos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/aos/aos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap-icons/bootstrap-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap-icons/bootstrap-icons.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap-icons/bootstrap-icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/boxicons/css/animations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/boxicons/css/boxicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/boxicons/css/boxicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/boxicons/css/transformations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/boxicons/fonts/boxicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/boxicons/fonts/boxicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/boxicons/fonts/boxicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/boxicons/fonts/boxicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/boxicons/fonts/boxicons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/glightbox/css/glightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/glightbox/css/glightbox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/glightbox/css/plyr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/glightbox/css/plyr.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/glightbox/js/glightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/glightbox/js/glightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/isotope-layout/isotope.pkgd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/isotope-layout/isotope.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/php-email-form/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/purecounter/purecounter_vanilla.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/purecounter/purecounter_vanilla.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/swiper/swiper-bundle.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/swiper/swiper-bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/swiper/swiper-bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/typed.js/typed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/typed.js/typed.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/typed.js/typed.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/assets/vendor/waypoints/noframework.waypoints.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/forms/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/forms/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/inner-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templates/iPortfolio/portfolio-details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/views/AboutView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/views/AboutView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/layout/SiteFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/layout/SiteFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/layout/SiteHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/layout/SiteHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/stores/exchangerateApi/exchangerateApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/stores/exchangerateApi/exchangerateApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/views/HomeView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../templates/HeroBiz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../templates/HeroBiz/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,25 +168,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/keeper/PhpstormProjects/pv121/full_stack/front_vue/src/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/keeper/PhpstormProjects/pv121/full_stack/front_vue/src/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/front_vue/src/assets" />
@@ -79,7 +206,8 @@
       <updated>1683990544843</updated>
       <workItem from="1683990545851" duration="9860000" />
       <workItem from="1684093207177" duration="772000" />
-      <workItem from="1684335192172" duration="14536000" />
+      <workItem from="1684335192172" duration="18080000" />
+      <workItem from="1684594712021" duration="2698000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -172,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684514307765</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Connect Design Комментарии">
+      <created>1684514758712</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684514758712</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +325,7 @@
     <MESSAGE value="Env Files" />
     <MESSAGE value="My Fetch" />
     <MESSAGE value="Connect Design" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connect Design" />
+    <MESSAGE value="Connect Design Комментарии" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connect Design Комментарии" />
   </component>
 </project>

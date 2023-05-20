@@ -1,5 +1,6 @@
 <script setup>
 
+import ExchangeApiList from "@/components/ExchangeApi/ExchangeApiList.vue";
 </script>
 
 <template>
@@ -23,14 +24,8 @@
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
+            <h4>Exchange</h4>
+            Сюда построить компонент по валютам
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
