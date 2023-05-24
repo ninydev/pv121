@@ -1,6 +1,12 @@
 version: '3'
 services:
 
+  db.mysql.main:
+    image: 'mysql/mysql-server:latest'
+    ports:
+      - '3355:3306' # Что бы я мог из редактора посомтреть - что творится в базе данных
+
+
   node.api.auth:
     build: ./node_api_auth
     volumes:
