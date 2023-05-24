@@ -2,6 +2,11 @@
 let express = require('express');
 let app = express();
 
+// Модуль работы с базой данных
+const sequelize = require('./config/mySql')
+const userModel = require('./models/User')
+sequelize.sync().then(()=>{}).catch(err=>console.log(err));
+
 // Поддержка Json и кодировок
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

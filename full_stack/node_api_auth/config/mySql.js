@@ -7,4 +7,5 @@ const sequelize = new Sequelize(
     host: "db.mysql.main"
 });
 
-export default sequelize
+module.exports = sequelize;
+
