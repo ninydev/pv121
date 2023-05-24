@@ -8,6 +8,8 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "~4.16.1",
-    "jsonwebtoken": "^9.0.0"
+    "jsonwebtoken": "^9.0.0",
+    "sequelize": "^6.31.1",
+    "mysql2": "^3.3.2"
   }
 }
