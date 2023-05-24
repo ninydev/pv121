@@ -1,6 +1,19 @@
 version: '3'
 services:
 
+  db.mongodb:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    volumes:
+      - './volumes/db/mongodb/main:/data/db'
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    networks:
+      - pv121_network
+    env_file:
+      - .env
+
   db.mysql.main:
     image: 'mysql/mysql-server:latest'
     ports:

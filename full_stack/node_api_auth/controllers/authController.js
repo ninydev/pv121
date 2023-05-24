@@ -2,6 +2,9 @@ const {generateUUID} = require('../services/generateUUID')
 const jwt = require('jsonwebtoken')
 const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY
 
+const UserSqlModel = require('../models/UserSqlModel')
+const UserMongoModel = require('../models/UserMongoModel')
+
 let users = []
 
 exports.showAll = function (request, response) {
@@ -9,21 +12,37 @@ exports.showAll = function (request, response) {
 }
 
 exports.register = function (request, response) {
-    let newUser = request.body
-    newUser.id = generateUUID()
+    let bodyUser = request.body
 
-    users.push(newUser)
-    console.log(JWT_SECRET_KEY)
+    // UserSqlModel.create(bodyUser).then((data) =>{
+    //     // console.log(data)
+    //     response.status(201).json({
+    //         user: data.dataValues,
+    //         token: jwt.sign(newUser, JWT_SECRET_KEY)
+    //     })
+    // }).catch(err => {
+    //     console.log(err)
+    //     response.status(419).json({
+    //         err
+    //     })
+    // })
 
-    // Тут будет процесс внесения пользователя в базу данных
+    const newMongoUser = new UserMongoModel(bodyUser)
+    newMongoUser.save( )
+        .then(data => {
+            let newUser = {
+                _id: data._id,
+                email: data.email,
+            }
+                response.status(201).json({
+                    user: newUser,
+                    token: jwt.sign(newUser, JWT_SECRET_KEY)
+                })
+        }).catch(err => {
+            console.log(err)
+            response.status(419).json({
+                err
+            })
+        })
 
-    // Процесс создания ключа
-
-
-    // Перед отправлением наружу пользователя необходимо удалить пароли
-    // и отдавать только нужную информацию
-    response.status(201).json({
-        user: newUser,
-        token: jwt.sign(newUser, JWT_SECRET_KEY)
-    })
 }

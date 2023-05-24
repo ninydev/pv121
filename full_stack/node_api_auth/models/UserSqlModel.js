@@ -1,7 +1,7 @@
 const sequelize = require('./../config/mySql')
 const {Sequelize} = require("sequelize");
 
-exports.User = sequelize.define("users", {
+const UserSqlModel = sequelize.define("users", {
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -17,3 +17,5 @@ exports.User = sequelize.define("users", {
         allowNull: false
     }
 });
+
+module.exports = UserSqlModel
