@@ -1,6 +1,19 @@
 version: '3'
 services:
 
+  redis.cache.jwt:
+    image: 'redis:alpine'
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./volumes/db/redis/cache/jwt/data:/data
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    networks:
+      - pv121_network
+    env_file:
+      - .env
+
   db.mongodb:
     image: mongo:latest
     ports:
@@ -40,6 +53,8 @@ services:
       - NAME=NodeApiAuth
     env_file:
       - .env
+    depends_on:
+      - redis.cache.jwt
 
   node.api.exchange:
     build: ./node_api_exchange

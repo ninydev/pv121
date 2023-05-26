@@ -1,5 +1,6 @@
 const {generateUUID} = require('../services/generateUUID')
 const jwt = require('jsonwebtoken')
+const MyRedisCache = require('../config/redisCacheJWT')
 const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY
 
 const UserSqlModel = require('../models/UserSqlModel')
@@ -19,12 +20,16 @@ exports.register = function (request, response) {
 
     UserSqlModel.create(bodyUser).then((data) =>{
         console.log(data)
+        let token =  jwt.sign({
+            id: data.dataValues.id,
+            email: data.dataValues.email
+        }, JWT_SECRET_KEY)
+
+        MyRedisCache.set(token, data.dataValues)
+
         response.status(201).json({
             user: data.dataValues,
-            token: jwt.sign({
-                id: data.dataValues.id,
-                email: data.dataValues.email
-            }, JWT_SECRET_KEY)
+            token: token
         })
     }).catch(err => {
         console.log(err)
