@@ -4,6 +4,7 @@ const {Schema} = require("mongoose");
 
 // Настройка полей (схемы)
 const userSchema = new mongoose.Schema({
+    // _id
     email: { type: String }, // Можно указывать так, если будут расширенные параметры
     password: { type: String }, // Можно указывать так, если будут расширенные параметры
 });

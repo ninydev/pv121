@@ -37,7 +37,18 @@ const sendToBack = () => {
 <template>
   <h2>Форма регистрации</h2>
 
-  <div class="bform py-5">
+  <div v-if="authStore.isPreload" class="preload">
+    <div class="spinner-border" role="status">
+      <span class="sr-only"></span>
+    </div>
+  </div>
+  <div v-else-if="authStore.isError">
+    <div class="alert alert-danger" role="alert">
+      error
+    </div>
+  </div>
+
+  <div v-else  class="bform py-5">
     <div class="row">
       <div class="container">
         <div class="col-lg-6 align-justify-center pr-4 pl-0 contact-form">

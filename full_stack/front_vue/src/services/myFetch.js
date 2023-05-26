@@ -1,5 +1,6 @@
 import myLog from "@/services/myLog";
 import {toast} from "vue3-toastify";
+import MyLog from "@/services/myLog";
 
 export default function (url, options = {}) {
 
@@ -9,7 +10,7 @@ export default function (url, options = {}) {
         fetch(url, options)
             .then( res => {
                 // Если я получил статус 200 (все ок)
-                if(res.status === 200) {
+                if(res.status === 200 || res.status === 201) {
                     try {
                         return res.json()
                     } catch (e) {
@@ -25,6 +26,7 @@ export default function (url, options = {}) {
             })
             .then(data => {
                 toast.success(" fetch Ok")
+                MyLog(data)
                 resolve(data)
             })
             .catch(error => {
