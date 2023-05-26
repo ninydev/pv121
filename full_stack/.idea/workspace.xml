@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Get token">
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Add token to header">
+      <change afterPath="$PROJECT_DIR$/node_api_auth/middlewaries/authenticateJWT.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/services/myFetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/services/myFetch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/stores/auth/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/stores/auth/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_api_auth/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api_auth/controllers/authController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_api_auth/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api_auth/routes/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,7 @@
       <workItem from="1684335192172" duration="18080000" />
       <workItem from="1684594712021" duration="10151000" />
       <workItem from="1684940807566" duration="9391000" />
-      <workItem from="1685113062657" duration="5352000" />
+      <workItem from="1685113062657" duration="7994000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -260,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685117727540</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Add token to header">
+      <created>1685118903751</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1685118903751</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +294,7 @@
     <MESSAGE value="DB Table users Create" />
     <MESSAGE value="MongoDB" />
     <MESSAGE value="Get token" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get token" />
+    <MESSAGE value="Add token to header" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add token to header" />
   </component>
 </project>

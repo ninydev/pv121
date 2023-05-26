@@ -8,6 +8,7 @@ const UserMongoModel = require('../models/UserMongoModel')
 let users = []
 
 exports.showAll = function (request, response) {
+    console.log(request.user)
     response.status(200).send(users)
 }
 
