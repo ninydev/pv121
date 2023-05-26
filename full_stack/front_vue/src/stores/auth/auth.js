@@ -3,8 +3,6 @@ import {toast} from "vue3-toastify";
 import MyFetch from "@/services/myFetch";
 import MyLog from "@/services/myLog";
 import myLocalStorage from "@/services/myLocalStorage";
-import {useRouter} from "vue-router";
-const router = useRouter();
 
 
 export  const useAuthStore = defineStore('auth', {
@@ -38,7 +36,6 @@ export  const useAuthStore = defineStore('auth', {
                     myLocalStorage.setItem('user', res.user)
                     myLocalStorage.setItem('token', res.token)
                     myLocalStorage.setItem('isLogin', true)
-                    router.push('/')
                     // MyLog(res)
                 })
                 .catch(err => {

@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="MongoDB">
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Get token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/components/MyAuth/Forms/FormRegister.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/components/MyAuth/Forms/FormRegister.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/components/MyAuth/RegisterForm.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front_vue/src/services/myFetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/services/myFetch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front_vue/src/stores/auth/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/stores/auth/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api_auth/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api_auth/controllers/authController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api_auth/models/UserMongoModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api_auth/models/UserMongoModel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +90,7 @@
       <workItem from="1684335192172" duration="18080000" />
       <workItem from="1684594712021" duration="10151000" />
       <workItem from="1684940807566" duration="9391000" />
-      <workItem from="1685113062657" duration="4224000" />
+      <workItem from="1685113062657" duration="5352000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -257,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684951108630</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Get token">
+      <created>1685117727540</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1685117727540</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +285,7 @@
     <MESSAGE value="DB Container" />
     <MESSAGE value="DB Table users Create" />
     <MESSAGE value="MongoDB" />
-    <option name="LAST_COMMIT_MESSAGE" value="MongoDB" />
+    <MESSAGE value="Get token" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get token" />
   </component>
 </project>
