@@ -2,6 +2,13 @@
 import { RouterLink, RouterView } from 'vue-router'
 import SiteHeader from "@/layout/SiteHeader.vue";
 import SiteFooter from "@/layout/SiteFooter.vue";
+import {onMounted} from "vue";
+import {useSocketMainStore} from "@/stores/sockets/socket.main";
+
+onMounted( () => {
+  const socketsMainStore = useSocketMainStore()
+  socketsMainStore.connect()
+})
 </script>
 
 <template>

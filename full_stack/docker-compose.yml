@@ -36,7 +36,7 @@ services:
   redis.socket:
     image: 'redis:alpine'
     volumes:
-      - './volumes/db/redis/socket:/data'
+      - './volumes/db/redis/sockets:/data'
     extra_hosts:
       - 'host.docker.internal:host-gateway'
     networks:

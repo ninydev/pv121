@@ -3,7 +3,7 @@
  */
 const port = process.env.PORT || 3000;
 const serverName = process.env.NAME || 'Node Socket';
-const redisSocketHost = process.env.REDIS_SOCKET_HOST || 'redis.socket';
+const redisSocketHost = process.env.REDIS_SOCKET_HOST || 'redis.sockets';
 const redisSocketPort = process.env.REDIS_SOCKET_PORT || 6379;
 
 /**
@@ -22,12 +22,12 @@ pubClient.on("connect", () => { console.log("pubs connected");});
 subClient.on("connect", () => { console.log("subs connected"); });
 
 /**
- * Создание экземпляра socket сервера
+ * Создание экземпляра sockets сервера
  */
 const io = new Server();
 
 /**
- * Подготовка socket сервера
+ * Подготовка sockets сервера
  */
 Promise.all([pubClient.connect(), subClient.connect()]).then(() => {
     io.adapter(createAdapter(pubClient, subClient));
@@ -49,7 +49,7 @@ Promise.all([pubClient.connect(), subClient.connect()]).then(() => {
     });
 
     /**
-     * Запуск socket сервера
+     * Запуск sockets сервера
      */
     io.listen(port, (err) => {
         if (err) { console.log(err)}
