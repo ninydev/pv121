@@ -1,0 +1,35 @@
+Arguments: 
+  /usr/bin/node /home/keeper/.yarn/bin/yarn.js
+
+PATH: 
+  /bin:/home/keeper/.yarn/bin:/home/keeper/.config/yarn/global/node_modules/.bin:/home/keeper/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.20.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/home/keeper/PhpstormProjects/pv121/full_stack/sockets/node_modules/engine.io/build/parser-v3'
+
+npm manifest: 
+  {
+    "dependencies": {
+      "@socket.io/redis-adapter": "^8.2.1",
+      "redis": "^4.6.6",
+      "socket.io": "^4.6.1"
+    },
+    "scripts": {
+      "start": "node index.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
