@@ -1,3 +1,4 @@
 .env
 .idea
 /volumes/
+/sockets/node_modules/

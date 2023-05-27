@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Redis">
-      <change afterPath="$PROJECT_DIR$/../chatGPT/articleText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chatGPT/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sockets/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sockets/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sockets/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,39 +42,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.20.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.32&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/keeper/PhpstormProjects/pv121/full_stack&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "16.20.0",
+    "javascript.nodejs.core.library.typings.version": "16.18.32",
+    "last_opened_file_path": "/home/keeper/PhpstormProjects/pv121/full_stack/sockets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;mongo&quot;,
-      &quot;redis&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mongo",
+      "redis"
     ],
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sockets" />
       <recent name="$PROJECT_DIR$/node_auth" />
       <recent name="$PROJECT_DIR$/front_vue/src/assets" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/node_api_exchange" />
-      <recent name="$PROJECT_DIR$/node_api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/node_api_auth/config" />
@@ -94,6 +96,7 @@
       <workItem from="1685113062657" duration="11180000" />
       <workItem from="1685176301295" duration="711000" />
       <workItem from="1685199547987" duration="1098000" />
+      <workItem from="1685205681612" duration="491000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
