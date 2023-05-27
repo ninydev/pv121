@@ -1,6 +1,47 @@
 version: '3'
 services:
 
+  socket.sunny:
+    build: ./sockets
+    volumes:
+      - ./sockets:/usr/src/app
+    command: sh -c " npm install && npm start "
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    networks:
+      - pv121_network
+    depends_on:
+      - redis.socket
+    environment:
+      - NAME=Sunny
+    env_file:
+      - .env
+
+  socket.jonny:
+    build: ./sockets
+    volumes:
+      - ./sockets:/usr/src/app
+    command: sh -c " npm install && npm start "
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    networks:
+      - pv121_network
+    depends_on:
+      - redis.socket
+    environment:
+      - NAME=Jonny
+    env_file:
+      - .env
+
+  redis.socket:
+    image: 'redis:alpine'
+    volumes:
+      - './volumes/db/redis/socket:/data'
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    networks:
+      - pv121_network
+
   redis.cache.jwt:
     image: 'redis:alpine'
     ports:
@@ -117,6 +158,8 @@ services:
       - node.api
       - node.api.exchange
       - node.api.auth
+      - socket.jonny
+      - socket.sunny
 
 
 networks:
