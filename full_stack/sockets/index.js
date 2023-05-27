@@ -39,6 +39,12 @@ Promise.all([pubClient.connect(), subClient.connect()]).then(() => {
         socket.emit('my-name-is', serverName);
         console.log("connection: " + socket.handshake.address)
 
+        socket.on('user-message', data => {
+            console.log("User Message: " + data)
+            socket.emit('user-message', data)
+            socket.broadcast.emit('user-message', data)
+        })
+
         /**
          * Тут можно далее описывать события
          */

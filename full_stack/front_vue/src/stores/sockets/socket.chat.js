@@ -1,5 +1,7 @@
 import {defineStore} from "pinia";
 import {toast} from "vue3-toastify";
+import myLog from "@/services/myLog";
+import {useSocketMainStore} from "@/stores/sockets/socket.main";
 
 export const useSocketChatStore = defineStore('socket.chat', {
     state: () => ({
@@ -8,11 +10,11 @@ export const useSocketChatStore = defineStore('socket.chat', {
     }),
     actions: {
         messageHandler (msg) {
-            this.message.push(msg);
+            this.messages.push(msg);
             toast.info(msg);
         },
         connect(){
-            const socketMainStore = useSocketChatStore()
+            const socketMainStore = useSocketMainStore()
             this.socket = socketMainStore.socket
 
             this.socket.on('user-message',this.messageHandler)
