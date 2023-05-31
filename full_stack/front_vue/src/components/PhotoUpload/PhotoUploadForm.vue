@@ -1,16 +1,12 @@
 <script setup>
+import {usePhotoUploadStore} from "@/stores/photoUpload/photoUpload";
+const photoUploadStore = usePhotoUploadStore()
 
-
-
-// Обработчик отправки формы
-const sendToBack = () => {
-
-}
 </script>
 
 <template>
-  <form action="/someUrl" method="post" enctype="multipart/form-data" @submit.prevent="sendToBack">
-  <input type="file">
+  <form action="/someUrl" method="post" enctype="multipart/form-data" @submit.prevent="photoUploadStore.doSendFile">
+  <input type="file" @change="photoUploadStore.changeFile">
   <input type="submit" value="send">
   </form>
 </template>

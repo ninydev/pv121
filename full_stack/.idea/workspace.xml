@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Upload file">
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/PhotoUpload/PhotoUploadForm.vue" afterDir="false" />
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Upload file подготовка формы">
+      <change afterPath="$PROJECT_DIR$/front_vue/src/stores/photoUpload/photoUpload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/views/PhotoUploadView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/views/PhotoUploadView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/components/PhotoUpload/PhotoUploadForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/components/PhotoUpload/PhotoUploadForm.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Composition API Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -95,7 +95,7 @@
       <workItem from="1685176301295" duration="711000" />
       <workItem from="1685199547987" duration="1098000" />
       <workItem from="1685205681612" duration="4319000" />
-      <workItem from="1685545922883" duration="2972000" />
+      <workItem from="1685545922883" duration="4674000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -335,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685549208161</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Upload file подготовка формы">
+      <created>1685550036686</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1685550036686</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +350,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Docker" />
     <MESSAGE value="Dockers" />
     <MESSAGE value="Nova Poshta" />
     <MESSAGE value="Exchange" />
@@ -368,6 +374,7 @@
     <MESSAGE value="Страница чата" />
     <MESSAGE value="Чат" />
     <MESSAGE value="Upload file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upload file" />
+    <MESSAGE value="Upload file подготовка формы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload file подготовка формы" />
   </component>
 </project>
