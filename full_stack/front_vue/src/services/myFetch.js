@@ -17,9 +17,13 @@ export default function (url, options = {}) {
         // Если headers не существует, создаем новый объект Headers
         options.headers = new Headers({
             'Authorization': `Bearer ${MyLocalStorage.getItem('token')}`,
-            'Content-Type': 'application/json',
+            //'Content-Type': 'application/json',
         });
     }
+
+    MyLog(options.headers)
+
+
 
     return new Promise( (resolve, reject) => {
 

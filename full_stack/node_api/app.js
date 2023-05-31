@@ -19,18 +19,25 @@ app.use(logger('dev'));
 
 
 // Поддержка Json и кодировок
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: false }));
 
 
 // Для обработки объектов в body
-const bodyParser = require('body-parser');
-app.use(bodyParser.json());
+// const bodyParser = require('body-parser');
+// app.use(bodyParser.json());
+
+// Для загрузки файлов
+const fileUpload = require('express-fileupload');
+app.use(fileUpload());
+
 
 
 // Машрутизация
 let postsRouter = require('./routes/posts')
 app.use('/api/posts', postsRouter)
+const uploadFileRouter = require('./routes/uploadFile')
+app.use('/api/uploadFile', uploadFileRouter)
 
 // let indexRouter = require('./routes/index');
 // let usersRouter = require('./routes/users');

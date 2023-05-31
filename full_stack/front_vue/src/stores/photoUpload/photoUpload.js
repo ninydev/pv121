@@ -17,8 +17,10 @@ export const usePhotoUploadStore = defineStore('photoUpload', {
         doSendFile() {
             let frmData = new FormData()
             MyLog(frmData)
+            // let file = this.file.value()
             frmData.append('fileBody', this.file)
             MyFetch('/api/uploadFile', {
+                'Content-Type': 'multipart/form-data',
                 method: 'POST',
                 body: frmData
             })
