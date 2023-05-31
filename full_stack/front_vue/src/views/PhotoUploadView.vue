@@ -1,7 +1,8 @@
 <script setup>
 
 import SiteBreadcrumbs from "@/layout/SiteBreadcrumbs.vue";
-const pageTitle = "Upload Image"
+import PhotoUploadForm from "@/components/PhotoUpload/PhotoUploadForm.vue";
+const pageTitle = "Photo Upload"
 </script>
 
 <template>
@@ -15,9 +16,7 @@ const pageTitle = "Upload Image"
         <h2>{{pageTitle}}</h2>
       </div>
 
-      <div>
-
-      </div>
+      <PhotoUploadForm></PhotoUploadForm>
 
     </div>
   </section><!-- End Inner Page -->

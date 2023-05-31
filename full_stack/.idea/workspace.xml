@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Чат">
-      <change afterPath="$PROJECT_DIR$/front_vue/src/views/PhotoUploadView.vue" afterDir="false" />
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Upload file">
+      <change afterPath="$PROJECT_DIR$/front_vue/src/components/PhotoUpload/PhotoUploadForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/layout/SiteHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/layout/SiteHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/views/PhotoUploadView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/views/PhotoUploadView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +95,7 @@
       <workItem from="1685176301295" duration="711000" />
       <workItem from="1685199547987" duration="1098000" />
       <workItem from="1685205681612" duration="4319000" />
-      <workItem from="1685545922883" duration="2106000" />
+      <workItem from="1685545922883" duration="2972000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -329,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685209573462</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Upload file">
+      <created>1685549208161</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1685549208161</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +343,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Start" />
     <MESSAGE value="Docker" />
     <MESSAGE value="Dockers" />
     <MESSAGE value="Nova Poshta" />
@@ -362,6 +367,7 @@
     <MESSAGE value="Socket Client In Pinia" />
     <MESSAGE value="Страница чата" />
     <MESSAGE value="Чат" />
-    <option name="LAST_COMMIT_MESSAGE" value="Чат" />
+    <MESSAGE value="Upload file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload file" />
   </component>
 </project>
