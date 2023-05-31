@@ -19,13 +19,13 @@ app.use(logger('dev'));
 
 
 // Поддержка Json и кодировок
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 
 // Для обработки объектов в body
-// const bodyParser = require('body-parser');
-// app.use(bodyParser.json());
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
 
 // Для загрузки файлов
 const fileUpload = require('express-fileupload');

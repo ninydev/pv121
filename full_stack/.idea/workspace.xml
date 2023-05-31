@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Начало Бек">
-      <change afterPath="$PROJECT_DIR$/node_api/controllers/uploadFileController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/routes/uploadFile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_api/yarn.lock" afterDir="false" />
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Файл получен">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/services/myFetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/services/myFetch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/stores/photoUpload/photoUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/stores/photoUpload/photoUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_api/controllers/uploadFileController.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/controllers/uploadFileController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +24,7 @@
       <list>
         <option value="Vue Composition API Component" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -46,39 +43,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.20.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.32&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/keeper/PhpstormProjects/pv121/full_stack/sockets&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "16.20.0",
+    "javascript.nodejs.core.library.typings.version": "16.18.32",
+    "last_opened_file_path": "/home/keeper/PhpstormProjects/pv121/full_stack/volumes/nginx/static-files/nginx-static-files",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;mongo&quot;,
-      &quot;redis&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mongo",
+      "redis"
     ],
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/volumes/nginx/static-files/nginx-static-files" />
       <recent name="$PROJECT_DIR$/sockets" />
       <recent name="$PROJECT_DIR$/node_auth" />
       <recent name="$PROJECT_DIR$/front_vue/src/assets" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/node_api_exchange" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/node_api_auth/config" />
@@ -101,7 +99,7 @@
       <workItem from="1685176301295" duration="711000" />
       <workItem from="1685199547987" duration="1098000" />
       <workItem from="1685205681612" duration="4319000" />
-      <workItem from="1685545922883" duration="6726000" />
+      <workItem from="1685545922883" duration="8585000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -355,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685551868411</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Файл получен">
+      <created>1685553792965</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1685553792965</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +368,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Nova Poshta" />
     <MESSAGE value="Exchange" />
     <MESSAGE value="Login Form" />
     <MESSAGE value="Storage" />
@@ -388,6 +392,7 @@
     <MESSAGE value="Upload file" />
     <MESSAGE value="Upload file подготовка формы" />
     <MESSAGE value="Начало Бек" />
-    <option name="LAST_COMMIT_MESSAGE" value="Начало Бек" />
+    <MESSAGE value="Файл получен" />
+    <option name="LAST_COMMIT_MESSAGE" value="Файл получен" />
   </component>
 </project>

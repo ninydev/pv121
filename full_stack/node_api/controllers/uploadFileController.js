@@ -11,6 +11,20 @@ exports.uploadFile = function (request, response) {
     // Я получил этот файл
     console.log(file)
 
+    // Путь к папке назначения
+    const destinationPath = '/usr/src/app/files/' + file.name;
+
+    file.mv(destinationPath, (err) => {
+        if (err) {
+            console.error(err);
+            // Обработка ошибки сохранения файла
+        } else {
+            // Файл успешно сохранен
+            // ...
+        }
+    });
+
+
     response.status(200).send({
         message: "ok"
     })
