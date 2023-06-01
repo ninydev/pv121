@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Файл получен">
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Файл получен и сохранен в микросервисе">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_api/controllers/uploadFileController.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/controllers/uploadFileController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +98,7 @@
       <workItem from="1685176301295" duration="711000" />
       <workItem from="1685199547987" duration="1098000" />
       <workItem from="1685205681612" duration="4319000" />
-      <workItem from="1685545922883" duration="8585000" />
+      <workItem from="1685545922883" duration="10768000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -360,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685553792965</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Файл получен и сохранен в микросервисе">
+      <created>1685555926458</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1685555926458</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +374,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Exchange" />
     <MESSAGE value="Login Form" />
     <MESSAGE value="Storage" />
     <MESSAGE value="Env Files" />
@@ -393,6 +398,7 @@
     <MESSAGE value="Upload file подготовка формы" />
     <MESSAGE value="Начало Бек" />
     <MESSAGE value="Файл получен" />
-    <option name="LAST_COMMIT_MESSAGE" value="Файл получен" />
+    <MESSAGE value="Файл получен и сохранен в микросервисе" />
+    <option name="LAST_COMMIT_MESSAGE" value="Файл получен и сохранен в микросервисе" />
   </component>
 </project>

@@ -125,6 +125,7 @@ services:
     build: ./node_api
     volumes:
       - ./node_api:/usr/src/app
+      - ./volumes/nginx/static-files/nginx-static-files:/usr/src/files
     command: sh -c " npm install && npm start "
     extra_hosts:
       - 'host.docker.internal:host-gateway'

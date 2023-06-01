@@ -12,7 +12,7 @@ exports.uploadFile = function (request, response) {
     console.log(file)
 
     // Путь к папке назначения
-    const destinationPath = '/usr/src/app/files/' + file.name;
+    const destinationPath = '/usr/src/files/' + file.name;
 
     file.mv(destinationPath, (err) => {
         if (err) {
