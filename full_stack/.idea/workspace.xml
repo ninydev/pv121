@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Файл получен и сохранен в хранилище nginx">
-      <change afterPath="$PROJECT_DIR$/node_api/config/msStorage.js" afterDir="false" />
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Файл получен и сохранен в хранилище azure">
+      <change afterPath="$PROJECT_DIR$/node_api/config/msComputerVision.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/controllers/uploadFileController.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/controllers/uploadFileController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +97,7 @@
       <workItem from="1685176301295" duration="711000" />
       <workItem from="1685199547987" duration="1098000" />
       <workItem from="1685205681612" duration="4319000" />
-      <workItem from="1685545922883" duration="13227000" />
+      <workItem from="1685545922883" duration="14323000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -375,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685632818988</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Файл получен и сохранен в хранилище azure">
+      <created>1685635081150</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1685635081150</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +387,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Storage" />
     <MESSAGE value="Env Files" />
     <MESSAGE value="My Fetch" />
     <MESSAGE value="Connect Design" />
@@ -408,6 +411,7 @@
     <MESSAGE value="Файл получен" />
     <MESSAGE value="Файл получен и сохранен в микросервисе" />
     <MESSAGE value="Файл получен и сохранен в хранилище nginx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Файл получен и сохранен в хранилище nginx" />
+    <MESSAGE value="Файл получен и сохранен в хранилище azure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Файл получен и сохранен в хранилище azure" />
   </component>
 </project>

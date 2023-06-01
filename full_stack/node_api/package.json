@@ -11,6 +11,8 @@
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "morgan": "~1.9.1",
-    "@azure/storage-blob": "^12.14.0"
+    "@azure/storage-blob": "^12.14.0",
+    "ms-rest-azure": "^3.0.2",
+    "azure-cognitiveservices-computervision": "^4.0.0"
   }
 }
