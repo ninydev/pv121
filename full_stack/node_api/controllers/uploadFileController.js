@@ -1,5 +1,6 @@
 const uploadFileToAzureBlobStorage = require("../config/msStorage");
 const getImageDescription = require("../config/msComputerVision");
+const uploadImageToMinIO = require("../config/minioStorage");
 
 exports.uploadFile = function (request, response) {
     if (!request.files || Object.keys(request.files).length === 0) {
@@ -24,9 +25,10 @@ exports.uploadFile = function (request, response) {
             // Файл успешно сохранен
             // ...
 
-            uploadFileToAzureBlobStorage('amazon-static-files', file.name, destinationPath)
+            // uploadFileToAzureBlobStorage('amazon-static-files', file.name, destinationPath)
             // getImageDescription('https://itstepmk121.blob.core.windows.net/amazon-static-files/' + file.name)
-            getImageDescription('https://i0.wp.com/www.ninydev.com/wp-content/uploads/2017/07/img_6.jpg')
+            // getImageDescription('https://i0.wp.com/www.ninydev.com/wp-content/uploads/2017/07/img_6.jpg')
+            uploadImageToMinIO('min-io-static-files',file.name, destinationPath)
 
         }
     });

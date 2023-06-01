@@ -1,5 +1,20 @@
 version: '3'
 services:
+  minio.storage:
+    image: minio/minio:latest
+    ports:
+      - "9000:9000"
+      - "9009:9009"
+    volumes:
+      - ./volumes/minio/storage:/data
+    env_file:
+      - .env
+    command: server --console-address :9009 /data
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    networks:
+      - pv121_network
+
   nginx.static:
     image: nginx:alpine
     volumes:
