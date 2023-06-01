@@ -13,6 +13,7 @@ const client = new ComputerVision.ComputerVisionClient(credentials, endpoint);
 // Функция для отправки фотографии и получения описания
 async function getImageDescription(imageUrl) {
     // Отправляем запрос на описание изображения
+    console.log(imageUrl)
     const result = await client.describeImage(imageUrl, { language: 'en' });
     console.log('Computer Vision result')
     console.log(result)

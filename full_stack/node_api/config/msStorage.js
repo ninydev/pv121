@@ -21,6 +21,7 @@ async function uploadFileToAzureBlobStorage(containerName, fileName, filePath) {
 
     await blockBlobClient.uploadFile(filePath);
 
+
     console.log('Файл успешно загружен в Azure Blob Storage');
 }
 

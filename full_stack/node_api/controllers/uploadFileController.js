@@ -1,4 +1,5 @@
 const uploadFileToAzureBlobStorage = require("../config/msStorage");
+const getImageDescription = require("../config/msComputerVision");
 
 exports.uploadFile = function (request, response) {
     if (!request.files || Object.keys(request.files).length === 0) {
@@ -24,7 +25,8 @@ exports.uploadFile = function (request, response) {
             // ...
 
             uploadFileToAzureBlobStorage('amazon-static-files', file.name, destinationPath)
-
+            // getImageDescription('https://itstepmk121.blob.core.windows.net/amazon-static-files/' + file.name)
+            getImageDescription('https://i0.wp.com/www.ninydev.com/wp-content/uploads/2017/07/img_6.jpg')
 
         }
     });
