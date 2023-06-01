@@ -1,3 +1,4 @@
+const uploadFileToAzureBlobStorage = require("../config/msStorage");
 
 exports.uploadFile = function (request, response) {
     if (!request.files || Object.keys(request.files).length === 0) {
@@ -21,6 +22,10 @@ exports.uploadFile = function (request, response) {
         } else {
             // Файл успешно сохранен
             // ...
+
+            uploadFileToAzureBlobStorage('amazon-static-files', file.name, destinationPath)
+
+
         }
     });
 
