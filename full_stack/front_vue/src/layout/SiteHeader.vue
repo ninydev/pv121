@@ -18,6 +18,7 @@ const authStore = useAuthStore()
           <li><RouterLink to="/">Home</RouterLink></li>
           <li><RouterLink to="/about">About</RouterLink></li>
           <li><RouterLink to="/chat">Chat</RouterLink></li>
+          <li><RouterLink to="/blog">Blog</RouterLink></li>
           <li><RouterLink to="/photoUpload">Photo Upload</RouterLink></li>
           <li v-if="!authStore.isLogin"><RouterLink to="/register">Register</RouterLink></li>
           <li v-else>Logout</li>

@@ -21,6 +21,11 @@ async function uploadFileToAzureBlobStorage(containerName, fileName, filePath) {
 
     await blockBlobClient.uploadFile(filePath);
 
+    // Установка типа содержимого (Content-Type)
+    const contentType = 'image/jpeg';
+    await blockBlobClient.setHTTPHeaders({
+        blobContentType: contentType
+    });
 
     console.log('Файл успешно загружен в Azure Blob Storage');
 }

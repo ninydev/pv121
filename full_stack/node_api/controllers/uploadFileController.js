@@ -25,10 +25,15 @@ exports.uploadFile = function (request, response) {
             // Файл успешно сохранен
             // ...
 
-            // uploadFileToAzureBlobStorage('amazon-static-files', file.name, destinationPath)
+            uploadFileToAzureBlobStorage('amazon-static-files', file.name, destinationPath)
             // getImageDescription('https://itstepmk121.blob.core.windows.net/amazon-static-files/' + file.name)
+            // getImageDescription('https://i0.wp.com/www.ninydev.com/wp-content/uploads/2017/07/img_2.jpg')
+            // getImageDescription('https://i0.wp.com/www.ninydev.com/wp-content/uploads/2017/07/img_3.jpg')
+            // getImageDescription('https://i0.wp.com/www.ninydev.com/wp-content/uploads/2017/07/img_4.jpg')
+            // getImageDescription('https://i0.wp.com/www.ninydev.com/wp-content/uploads/2017/07/img_5.jpg')
             // getImageDescription('https://i0.wp.com/www.ninydev.com/wp-content/uploads/2017/07/img_6.jpg')
-            uploadImageToMinIO('min-io-static-files',file.name, destinationPath)
+            // getImageDescription('https://i0.wp.com/www.ninydev.com/wp-content/uploads/2017/07/img_7.jpg')
+            // uploadImageToMinIO('min-io-static-files',file.name, destinationPath)
 
         }
     });
