@@ -1,9 +1,13 @@
+const {request} = require("express");
+
+const fetchChatGPT = require('./../config/chatGPT')
 
 // Некая коллекция постов
 let posts = [
-    {id: 0, title: "Hello 1", body: "world 1"},
-    {id: 1, title: "Hello 2", body: "world 2"}
+    {id: 0, title: "Hello 1", body: "world 1", chatGPT: null},
 ]
+
+
 
 // CRUD - (BREAD)
 // RESTful API - шаблон соответствия операции с сущностью
@@ -21,11 +25,14 @@ exports.getPost = function (request, response) {
     response.send(posts[postId])
 }
 
-exports.createPost = function (request, response) {
+exports.createPost = async function (request, response) {
     let newPost = request.body
     newPost.id = posts.length
+    newPost.chatGPT = await fetchChatGPT("Пошути на такое послание пользователя (на русском)" + newPost.body)
     console.log("Create New Post: ")
     console.log(request.body)
+
+
     posts.push(newPost)
     response.status(201).send(newPost)
 }
