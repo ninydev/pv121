@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Подключаем minio">
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/Blog/AddPost.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/views/BlogView.vue" afterDir="false" />
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Подключаем редактор вместо textArea">
+      <change afterPath="$PROJECT_DIR$/front_vue/src/stores/posts/posts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/layout/SiteHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/layout/SiteHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/config/msStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/config/msStorage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/controllers/uploadFileController.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/controllers/uploadFileController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_vue/src/components/Blog/AddPost.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/components/Blog/AddPost.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="Vue Composition API Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -106,7 +99,7 @@
       <workItem from="1685205681612" duration="4319000" />
       <workItem from="1685545922883" duration="20129000" />
       <workItem from="1685698120241" duration="2465000" />
-      <workItem from="1685989729119" duration="4489000" />
+      <workItem from="1685989729119" duration="5850000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -409,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685641263405</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Подключаем редактор вместо textArea">
+      <created>1686155573116</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1686155573116</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +417,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Connect Design" />
     <MESSAGE value="Connect Design Комментарии" />
     <MESSAGE value="Страница Регистрации Начало" />
     <MESSAGE value="RegiserForm" />
@@ -442,6 +441,7 @@
     <MESSAGE value="Файл получен и сохранен в хранилище azure" />
     <MESSAGE value="Подключаем компьютерное зрение" />
     <MESSAGE value="Подключаем minio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Подключаем minio" />
+    <MESSAGE value="Подключаем редактор вместо textArea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Подключаем редактор вместо textArea" />
   </component>
 </project>

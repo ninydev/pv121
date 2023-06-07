@@ -4,9 +4,20 @@
 import {EditorContent, useEditor} from "@tiptap/vue-3";
 import {StarterKit} from "@tiptap/starter-kit";
 import MyLog from "@/services/myLog";
+import {toast} from "vue3-toastify";
+import {useBlogStore} from "@/stores/posts/posts";
+
+const blogStore = useBlogStore()
 
 const sendToBack = () => {
   MyLog(newPost)
+  if(newPost.title.length < 5) {
+    toast.error("Заголовок должен быть более 5 символов")
+    return false
+  }
+  // Так лучше - когда все операции с данными у вас в отдельном модуле
+  blogStore.createNewPost(newPost)
+  // Да - можно ее написать и тут - например отправку на сервер
   return false
 }
 
