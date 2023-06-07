@@ -36,6 +36,7 @@ app.use(fileUpload());
 // Машрутизация
 let postsRouter = require('./routes/posts')
 app.use('/api/posts', postsRouter)
+
 const uploadFileRouter = require('./routes/uploadFile')
 app.use('/api/uploadFile', uploadFileRouter)
 

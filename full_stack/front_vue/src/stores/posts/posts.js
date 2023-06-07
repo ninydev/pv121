@@ -13,14 +13,17 @@ export const useBlogStore = defineStore('blogStore', {
     actions: {
         createNewPost(newPost){
             this.isPreload = true
-            MyFetch('/api/post', {
-                'Content-Type': 'application/json',
+            MyFetch('/api/posts', {
+                headers: {
+                    "Content-Type": "application/json",
+                    // 'Content-Type': 'application/x-www-form-urlencoded',
+                },
                 method: 'POST',
                 body: JSON.stringify(newPost)
             })
                 .then(res=> {
                     this.isPreload = false
-                    posts.push(newPost)
+                    this.posts.push(res)
                     MyLog(res)
                 })
         }

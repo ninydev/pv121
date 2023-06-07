@@ -1,8 +1,8 @@
 
 // Некая коллекция постов
 let posts = [
-    {title: "Hello 1", body: "world 1"},
-    {title: "Hello 2", body: "world 2"}
+    {id: 0, title: "Hello 1", body: "world 1"},
+    {id: 1, title: "Hello 2", body: "world 2"}
 ]
 
 // CRUD - (BREAD)
@@ -23,7 +23,9 @@ exports.getPost = function (request, response) {
 
 exports.createPost = function (request, response) {
     let newPost = request.body
-    // console.log(request.body)
+    newPost.id = posts.length
+    console.log("Create New Post: ")
+    console.log(request.body)
     posts.push(newPost)
     response.status(201).send(newPost)
 }
