@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "amqplib": "^0.10.3",
     "axios": "^1.4.0",
     "express-fileupload": "^1.4.0",
     "cookie-parser": "~1.4.4",

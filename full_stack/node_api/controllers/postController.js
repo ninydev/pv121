@@ -1,6 +1,11 @@
 const {request} = require("express");
 
-const fetchChatGPT = require('./../config/chatGPT')
+
+// Так я бы выполнял эту работу сам
+// const fetchChatGPT = require('./../config/chatGPT')
+
+// Подключу способ постановки задач в очередь
+const sendMsgToChatGPT = require('./../config/producerChatGPT')
 
 // Некая коллекция постов
 let posts = [
@@ -37,6 +42,11 @@ exports.createPost = async function (request, response) {
     // --------------------------------------------
     // newPost.chatGPT = await fetchChatGPT(
     //     "Напиши ключевые слова для этого текста. На русском. Не более 10. Ответ раздели запятыми: \n " + newPost.body)
+
+    sendMsgToChatGPT(newPost)
+
+
+
 
     // --------------------------------------------
     console.log("Create New Post: ")

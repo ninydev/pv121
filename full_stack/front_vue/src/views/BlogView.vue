@@ -13,8 +13,6 @@ const socketChatStore = useSocketChatStore()
 
 
 const pageTitle = "Blog Page"
-const msg = new ref()
-
 </script>
 
 <template>

@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Версия, с шуткой от чатика">
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/Blog/ListPostItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_vue/src/components/Blog/ListPosts.vue" afterDir="false" />
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Компонентный подход">
+      <change afterPath="$PROJECT_DIR$/node_api/config/producerChatGPT.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/stores/posts/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/stores/posts/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front_vue/src/views/BlogView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/views/BlogView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_api/controllers/postController.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/controllers/postController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_api/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="Vue Composition API Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -102,7 +104,7 @@
       <workItem from="1685205681612" duration="4319000" />
       <workItem from="1685545922883" duration="20129000" />
       <workItem from="1685698120241" duration="2465000" />
-      <workItem from="1685989729119" duration="12971000" />
+      <workItem from="1685989729119" duration="17749000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -433,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686159093211</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Компонентный подход">
+      <created>1686326320024</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1686326320024</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +450,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="RegiserForm" />
     <MESSAGE value="Node Api Back" />
     <MESSAGE value="DB Container" />
     <MESSAGE value="DB Table users Create" />
@@ -466,6 +474,7 @@
     <MESSAGE value="Подключаем редактор вместо textArea" />
     <MESSAGE value="Отправка сущности на бек" />
     <MESSAGE value="Версия, с шуткой от чатика" />
-    <option name="LAST_COMMIT_MESSAGE" value="Версия, с шуткой от чатика" />
+    <MESSAGE value="Компонентный подход" />
+    <option name="LAST_COMMIT_MESSAGE" value="Компонентный подход" />
   </component>
 </project>

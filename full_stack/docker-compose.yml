@@ -1,5 +1,19 @@
 version: '3'
 services:
+
+
+  rabbit.mq:
+    image: rabbitmq:3.12.0-management-alpine
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    env_file:
+      - .env
+    networks:
+      - pv121_network
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
   minio.storage:
     image: minio/minio:latest
     ports:
