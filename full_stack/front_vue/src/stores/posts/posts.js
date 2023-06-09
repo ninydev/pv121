@@ -11,6 +11,28 @@ export const useBlogStore = defineStore('blogStore', {
         posts: []
     }),
     actions: {
+
+        /**
+         * Процесс получения постов
+         */
+        getAllPost(){
+            this.isPreload = true
+            MyFetch('/api/posts', {
+                headers: {
+                    "Content-Type": "application/json",
+                    // 'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                method: 'GET',
+            }).then(res => {
+                MyLog(res)
+                this.posts = res
+            })
+        },
+
+        /**
+         * Процесс отправки поста
+         * @param newPost
+         */
         createNewPost(newPost){
             this.isPreload = true
             MyFetch('/api/posts', {

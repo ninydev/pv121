@@ -27,11 +27,27 @@ exports.getPost = function (request, response) {
 
 exports.createPost = async function (request, response) {
     let newPost = request.body
+    // Конечно тут нужно собрать базу данных, добавлять через базу
+    // Если пост с картинкой - загружать ее в стор
+    // Создание сущности (как в регистрации и тп)
     newPost.id = posts.length
-    newPost.chatGPT = await fetchChatGPT("Пошути на такое послание пользователя (на русском)" + newPost.body)
+
+    // Вот тут у меня возникает проблема
+
+    // --------------------------------------------
+    // newPost.chatGPT = await fetchChatGPT(
+    //     "Напиши ключевые слова для этого текста. На русском. Не более 10. Ответ раздели запятыми: \n " + newPost.body)
+
+    // --------------------------------------------
     console.log("Create New Post: ")
     console.log(request.body)
 
+    // Есть два подхода
+    // 1 - если в сущности появился только id - нет смысла возвращать всю сущность
+    // 2 - если появились сторонние поля (например отзыв чата)
+    // есть смысл возвращать всю сущность
+    // !!! - если у вас на front не используется JS Framework или AJAX
+    // сущность нужно возвращать всегда
 
     posts.push(newPost)
     response.status(201).send(newPost)

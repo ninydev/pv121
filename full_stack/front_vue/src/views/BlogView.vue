@@ -1,9 +1,13 @@
 <script setup>
+/**
+ * Отвечает за наружную часть всей зоны контента
+ */
 
 import {onMounted, onUnmounted, ref} from "vue";
 import {useSocketChatStore} from "@/stores/sockets/socket.chat";
 import SiteBreadcrumbs from "@/layout/SiteBreadcrumbs.vue";
 import AddPost from "@/components/Blog/AddPost.vue";
+import ListPosts from "@/components/Blog/ListPosts.vue";
 
 const socketChatStore = useSocketChatStore()
 
@@ -26,9 +30,7 @@ const msg = new ref()
       </div>
 
       <div>
-        <ul>
-          Список постов
-        </ul>
+        <ListPosts></ListPosts>
       </div>
       <div>
         <AddPost></AddPost>
