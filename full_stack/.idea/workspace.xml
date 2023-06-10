@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="RabbitMQ + pingator">
-      <change afterPath="$PROJECT_DIR$/consumers/pingator/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumers/sendToFront/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumers/sendToFront/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumers/sendToFront/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumers/sendToFront/package.json" afterDir="false" />
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="RabbitMQ + Socket">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumers/pingator/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/consumers/pingator/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/stores/sockets/socket.main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/stores/sockets/socket.main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_api/config/producerPingator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/config/producerPingator.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,14 +99,7 @@
       <workItem from="1685545922883" duration="20129000" />
       <workItem from="1685698120241" duration="2465000" />
       <workItem from="1685989729119" duration="18588000" />
-      <workItem from="1686409788020" duration="5057000" />
-    </task>
-    <task id="LOCAL-00003" summary="Docker">
-      <created>1683992061384</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1683992061384</updated>
+      <workItem from="1686409788020" duration="5901000" />
     </task>
     <task id="LOCAL-00004" summary="Dockers">
       <created>1683992242406</created>
@@ -452,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686415940241</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="RabbitMQ + Socket">
+      <created>1686417982662</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1686417982662</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +452,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="DB Table users Create" />
     <MESSAGE value="MongoDB" />
     <MESSAGE value="Get token" />
     <MESSAGE value="Add token to header" />
@@ -485,6 +476,7 @@
     <MESSAGE value="Компонентный подход" />
     <MESSAGE value="RabbitMQ" />
     <MESSAGE value="RabbitMQ + pingator" />
-    <option name="LAST_COMMIT_MESSAGE" value="RabbitMQ + pingator" />
+    <MESSAGE value="RabbitMQ + Socket" />
+    <option name="LAST_COMMIT_MESSAGE" value="RabbitMQ + Socket" />
   </component>
 </project>
