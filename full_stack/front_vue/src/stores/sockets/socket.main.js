@@ -27,6 +27,12 @@ export const useSocketMainStore = defineStore('socket.main', {
                 toast.error(data)
                 this.isConnect = false
             })
+
+            // Реакция на пингатор
+            this.socket.on('consumers.pingator', (data) => {
+                MyLog(data)
+                toast.info(data)
+            })
         }
     }
 })

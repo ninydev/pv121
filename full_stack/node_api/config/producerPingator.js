@@ -34,7 +34,7 @@ amqp.connect(`amqp://${rabbitUser}:${rabbitPassword}@${rabbitServer}:${rabbitPor
                 let d = new Date().toLocaleString()
                 console.log('Queue Ping: ' + d)
                 amqpChannel.sendToQueue(rabbitQueuePingator, Buffer.from(d));
-            }, 30000 )
+            }, 3000 )
         });
     });
 
