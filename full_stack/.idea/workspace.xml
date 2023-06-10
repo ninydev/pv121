@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="Компонентный подход">
-      <change afterPath="$PROJECT_DIR$/node_api/config/producerChatGPT.js" afterDir="false" />
+    <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="RabbitMQ">
+      <change afterPath="$PROJECT_DIR$/node_api/config/producerPingator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_vue/src/views/BlogView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_vue/src/views/BlogView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/controllers/postController.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/controllers/postController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_api/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_api/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +49,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "16.20.0",
     "javascript.nodejs.core.library.typings.version": "16.18.32",
-    "last_opened_file_path": "/home/keeper/PhpstormProjects/pv121/full_stack/front_vue/src/views",
+    "last_opened_file_path": "/home/keeper/PhpstormProjects/pv121/full_stack/node_api/config",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,11 +70,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/node_api/config" />
       <recent name="$PROJECT_DIR$/front_vue/src/views" />
       <recent name="$PROJECT_DIR$/volumes/nginx/static-files/nginx-static-files" />
       <recent name="$PROJECT_DIR$/sockets" />
       <recent name="$PROJECT_DIR$/node_auth" />
-      <recent name="$PROJECT_DIR$/front_vue/src/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/node_api_auth/config" />
@@ -104,7 +99,8 @@
       <workItem from="1685205681612" duration="4319000" />
       <workItem from="1685545922883" duration="20129000" />
       <workItem from="1685698120241" duration="2465000" />
-      <workItem from="1685989729119" duration="17749000" />
+      <workItem from="1685989729119" duration="18588000" />
+      <workItem from="1686409788020" duration="1307000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1683990597792</created>
@@ -442,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686326320024</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="RabbitMQ">
+      <created>1686333584809</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1686333584809</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +453,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Node Api Back" />
     <MESSAGE value="DB Container" />
     <MESSAGE value="DB Table users Create" />
     <MESSAGE value="MongoDB" />
@@ -475,6 +477,7 @@
     <MESSAGE value="Отправка сущности на бек" />
     <MESSAGE value="Версия, с шуткой от чатика" />
     <MESSAGE value="Компонентный подход" />
-    <option name="LAST_COMMIT_MESSAGE" value="Компонентный подход" />
+    <MESSAGE value="RabbitMQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="RabbitMQ" />
   </component>
 </project>

@@ -45,6 +45,8 @@ app.use('/api/uploadFile', uploadFileRouter)
 // app.use('/', indexRouter);
 // app.use('/users', usersRouter);
 
+// Запуск пингатора
+require('./config/producerPingator')
 
 // Экспорт настроек в главный файл
 module.exports = app;
