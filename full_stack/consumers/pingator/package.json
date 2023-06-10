@@ -1,0 +1,14 @@
+{
+  "name": "stormexpress",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "@socket.io/redis-adapter": "^8.2.1",
+    "redis": "^4.6.7",
+    "socket.io": "^4.6.2"
+  }
+}
