@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="RabbitMQ + Socket">
-      <change afterPath="$PROJECT_DIR$/../hello_php/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello_php/baseSytnax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello_php/hello.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello_php/helloHtml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello_php/legenda.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_php/02_fun_requests/function_start.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello_php/02_fun_requests/simple_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/../hello_php/02_fun_requests/simple_form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +104,7 @@
       <workItem from="1686420603638" duration="3133000" />
       <workItem from="1686756426642" duration="762000" />
       <workItem from="1686762093789" duration="1641000" />
+      <workItem from="1686930513365" duration="656000" />
     </task>
     <task id="LOCAL-00005" summary="Nova Poshta">
       <created>1683994696759</created>
