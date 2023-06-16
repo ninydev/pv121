@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdfbeaa7-f1d0-46df-8ec5-8826b27400bd" name="Changes" comment="RabbitMQ + Socket">
-      <change afterPath="$PROJECT_DIR$/../hello_php/02_fun_requests/function_start.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_php/02_fun_requests/baseClassUse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_php/02_fun_requests/fileUpload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_php/02_fun_requests/lib/Person.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_php/03_site/lib/SiteParams.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_php/03_site/lib/loadSite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_php/03_site/tpl/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_php/03_site/tpl/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_php/03_site/tpl/temp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_php/store/ios.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello_php/02_fun_requests/simple_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/../hello_php/02_fun_requests/simple_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello_php/02_fun_requests/function_start.php" beforeDir="false" afterPath="$PROJECT_DIR$/../hello_php/02_fun_requests/function_start.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
