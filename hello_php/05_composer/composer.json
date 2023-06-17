@@ -3,7 +3,9 @@
     "description": "Первый поакет с компосером",
     "type": "project",
     "require": {
-        "phpmailer/phpmailer": "dev-master"
+        "phpmailer/phpmailer": "dev-master",
+        "symfony/uid": "7.0.x-dev",
+        "symfony/mailer": "7.0.x-dev"
     },
     "license": "BeerWare",
     "autoload": {
