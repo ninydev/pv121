@@ -8,7 +8,7 @@ require_once ("../vendor/autoload.php");
 
 var_dump($_GET);
 
-$smtpPswd = "aSKhOsUtIF0qOGjnhb";
+$smtpPswd = "";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;

@@ -1290,7 +1290,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "phpmailer/phpmailer": 20,
-        "symfony/uid": 20
+        "symfony/uid": 20,
+        "symfony/mailer": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
