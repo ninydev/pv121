@@ -35,7 +35,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'From ' . $_GET['userName'];
-    $mail->Body    = $_GET['userMessage'];
+    $mail->Body    = " user write: " . $_GET['userMessage'];
 
     $mail->send();
     echo 'Message has been sent';
