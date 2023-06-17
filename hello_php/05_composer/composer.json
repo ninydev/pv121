@@ -1,0 +1,21 @@
+{
+    "name": "keeper/05_composer",
+    "description": "Первый поакет с компосером",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    },
+    "license": "BeerWare",
+    "autoload": {
+        "psr-4": {
+            "Keeper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oleksandr Nykytin",
+            "email": "keeper@ninydev.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
