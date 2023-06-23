@@ -10,6 +10,7 @@
 @endsection
 
 @section('content')
+    @include("forms.contact")
     <p>Эта часть будет внутри главной - там где аналог RenderBody .</p>
 @endsection
 

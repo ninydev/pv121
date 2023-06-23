@@ -7,6 +7,18 @@ use Illuminate\Http\Request;
 
 class Pv121Controller extends Controller
 {
+    function form(Request $request){
+
+        $request->validate([
+            'userName' => 'min:5'
+        ]);
+
+        $data = [
+            "userName" => $request->input('userName'),
+        ];
+        return view("pv121.hello", $data);
+    }
+
     function helloController(Request $request){
 
         // Если я строю представление View на стороне сервера
