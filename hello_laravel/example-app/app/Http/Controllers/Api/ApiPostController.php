@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Mockery\Exception;
 
 class ApiPostController extends Controller
 {
@@ -27,6 +29,8 @@ class ApiPostController extends Controller
         $p->setAttribute('slug', $request->input('slug'));
         $p->setAttribute('body', $request->input('body'));
         $p->setAttribute('img_url', $request->input('img_url'));
+
+        // тут нужно использовать try - catch - что бы анализировать ошибку
         $p->save();
 
         return $p;
@@ -46,16 +50,26 @@ class ApiPostController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, int $id)
     {
-        //
+        $p = Post::find($id);
+
+        $p->setAttribute('title', $request->input('title'));
+        $p->setAttribute('slug', $request->input('slug'));
+        $p->setAttribute('body', $request->input('body'));
+        $p->setAttribute('img_url', $request->input('img_url'));
+
+        $p->save();
+
+        return $p;
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(int $id)
     {
-        //
+        Post::find($id)->delete();
+        return [];
     }
 }
