@@ -18,7 +18,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('posts', \App\Http\Controllers\Api\ApiPostController::class);
+Route::apiResource('posts', \App\Http\Controllers\Post\Api\ApiPostController::class);
 
 
 Route::get('pv011', function () {

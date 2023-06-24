@@ -17,7 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('posts', \App\Http\Controllers\PostController::class);
+Route::get('/posts/search', [\App\Http\Controllers\Post\SearchPostController::class, 'search'])->name('posts.search');
+Route::resource('/posts', \App\Http\Controllers\Post\PostController::class);
+
 
 /**
  * Вернуть сразу представление (без контроллера)

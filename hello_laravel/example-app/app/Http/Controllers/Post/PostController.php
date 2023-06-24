@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Post;
 
+use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
@@ -21,15 +22,30 @@ class PostController extends Controller
 //            return strpos($post->title, 'About') !== false;
 //        });
 
-        $p = Post::where('title', 'LIKE', '%About%')
-            ->get()
-            ->filter(function ($post) {
-                return strpos($post->title, 'As') !== false;
-            });
+//        $p = Post::where('title', 'LIKE', '%About%')
+//            ->get()
+//            ->filter(function ($post) {
+//                return strpos($post->title, 'As') !== false;
+//            });
 
+//        $p = Post::query()
+//            ->where('title', 'LIKE', '%About%')
+//            ->where('title', 'LIKE', '%As%')
+//            ->get();
+
+        $builder = Post::query();
+
+        $builder->where('title', 'LIKE', '%About%');
+        $builder->where('title', 'LIKE', '%As%');
+
+        $builder->orderBy('title');
+
+        $sql = $builder->toSql();
+        $p = $builder->get();
 
         return view('posts.index', [
-            'posts' => $p
+            'posts' => $p,
+            'sql' => $sql
         ]);
     }
 
@@ -38,7 +54,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -52,9 +68,9 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(int $id)
     {
-        //
+        return Post::findOrFail($id);
     }
 
     /**
