@@ -3,12 +3,14 @@
 <form action="{{route('posts.search')}}" method="GET">
     <label>Title like <input type="text" name="search" value="{{$search}}"></label>
     <input type="submit">
-</form>
+
 <table>
     <thead>
     <tr>
-        <th> <a href="{{route('posts.search')}}/?orderBy=id">id </a></th>
-        <th> <a href="{{route('posts.search')}}/?orderBy=title"> title </a></th>
+        <th><input type="radio" name="orderBy" value="id">Id</th>
+        <th><input type="radio" name="orderBy" value="title">Title</th>
+{{--        <th> <a href="{{route('posts.search')}}/?orderBy=id">id </a></th>--}}
+{{--        <th> <a href="{{route('posts.search')}}/?orderBy=title"> title </a></th>--}}
     </tr>
     </thead>
     <tbody>
@@ -20,3 +22,5 @@
     @endforeach
     </tbody>
 </table>
+
+</form>
