@@ -8,6 +8,7 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     * @link https://laravel.su/docs/8.x/migrations
      */
     public function up(): void
     {
