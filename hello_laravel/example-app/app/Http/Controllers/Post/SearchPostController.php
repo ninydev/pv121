@@ -14,7 +14,7 @@ class SearchPostController extends Controller
 
         $builder->orderBy($request->input('orderBy', 'id'));
 
-        $search = $request->input('search') ;
+        $search = $request->input('search');
 
         if($search!= null) {
             $builder->where('title', 'LIKE', '%' . $search . '%');
