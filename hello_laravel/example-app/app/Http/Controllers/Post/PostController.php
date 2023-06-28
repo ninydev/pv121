@@ -3,14 +3,37 @@
 namespace App\Http\Controllers\Post;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Posts\RequestPostIndex;
 use App\Models\Post;
+use App\Presenters\RequestParamsPresenter;
+use App\Services\Interfaces\IPostService;
+use App\Services\PostService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 
 // https://laravel.su/docs/8.x/controllers
 class PostController extends Controller
 {
-    public function index(Request $request) {
+
+    public function index(RequestPostIndex $request, IPostService $service) {
+        // Формирование запроса к данным
+        // валидации, проверки - НА ЛОГИКУ
+        // потому что на допустимые значения у меня уже прошли проверку в RequestPostIndex
+        $params = new RequestParamsPresenter($request);
+
+        $p = $service->index($params);
+
+        return view('posts.index', [
+            'posts' => $p
+        ]);
+    }
+
+    /**
+     * https://laravel.su/docs/8.x/cache
+     * https://laravel.com/docs/10.x/cache
+     * @param Request $request
+     */
+    public function indexGoodCahce(Request $request) {
         // $p = Post::all();
 
         $perPage = $request->input('perPage', 1);

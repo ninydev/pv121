@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Post\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Post;
+use App\Presenters\RequestParamsPresenter;
+use App\Services\Interfaces\IPostService;
+use App\Services\PostService;
 use Illuminate\Http\Request;
 
 class ApiPostController extends Controller
@@ -11,9 +14,13 @@ class ApiPostController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request)
+    public function index(Request $request, IPostService $service)
     {
-        return Post::paginate($request->input('perPage', 1));
+        $params = new RequestParamsPresenter($request);
+
+        $p = $service->index($params);
+
+        return $p;
     }
 
     /**
