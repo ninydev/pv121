@@ -5,14 +5,28 @@ namespace App\Http\Controllers\Post;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 
 // https://laravel.su/docs/8.x/controllers
 class PostController extends Controller
 {
+    public function index() {
+        // $p = Post::all();
+
+        $p = Cache::remember('posts.all', 30, function () {
+           return Post::all();
+        });
+
+        return view('posts.index', [
+            'posts' => $p
+        ]);
+    }
+
     /**
      * https://laravel.su/docs/8.x/pagination
+     * https://laravel.com/docs/10.x/pagination
      */
-    public function index() {
+    public function indexGood() {
         // $p = Post::all()->paginate(10);
         // $p = Post::query()->paginate(1);
         $p = Post::paginate(1);

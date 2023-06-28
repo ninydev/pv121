@@ -11,9 +11,9 @@ class ApiPostController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return Post::all();
+        return Post::paginate($request->input('perPage', 1));
     }
 
     /**
