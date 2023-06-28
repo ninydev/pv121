@@ -10,10 +10,35 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     /**
+     * https://laravel.su/docs/8.x/pagination
+     */
+    public function index() {
+        // $p = Post::all()->paginate(10);
+        // $p = Post::query()->paginate(1);
+        $p = Post::paginate(1);
+        // dd($p);
+
+        return view('posts.index', [
+            'posts' => $p
+        ]);
+    }
+
+    /**
+     * Плохой вариант выдачи - поскольку мы не знаем, сколько сущностей
+     * есть в базе данных
+     */
+    public function indexNoPages() {
+        $p = Post::all();
+        return view('posts.index', [
+           'posts' => $p
+        ]);
+    }
+
+    /**
      * Display a listing of the resource.
      * https://laravel.su/docs/8.x/collections
      */
-    public function index()
+    public function indexWork()
     {
         // Из модели я получаю коллекцию
         // а потом сортирую саму полученную коллекцию
