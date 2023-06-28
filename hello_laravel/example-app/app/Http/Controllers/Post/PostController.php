@@ -10,9 +10,25 @@ use Illuminate\Support\Facades\Cache;
 // https://laravel.su/docs/8.x/controllers
 class PostController extends Controller
 {
-    public function index() {
+    public function index(Request $request) {
         // $p = Post::all();
 
+        $perPage = $request->input('perPage', 1);
+        $page = $request->input('page', 1);
+
+        // Сформирую ключ для хранения ключа на основе параметров
+        $cacheKey = 'post.index.page' . $page .'.perPage.' . $perPage;
+
+        $p = Cache::remember($cacheKey, 30, function () use ($perPage, $page) {
+            return Post::paginate($perPage);
+        });
+
+        return view('posts.index', [
+            'posts' => $p
+        ]);
+    }
+
+    public function indexAllCache(Request $request) {
         $p = Cache::remember('posts.all', 30, function () {
            return Post::all();
         });

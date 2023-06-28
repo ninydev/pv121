@@ -9,3 +9,6 @@
     @endforeach
 </ul>
 
+
+{{ $posts->links() }}
+
