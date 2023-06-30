@@ -11,4 +11,9 @@ class Post extends Model
     // при необходимости - указываем имя таблицы
     //protected $table = 'some_table_name';
 
+    public function categories() {
+        return $this->belongsToMany(Category::class,
+            'pivot_post_categories','post_id', 'category_id');
+    }
+
 }

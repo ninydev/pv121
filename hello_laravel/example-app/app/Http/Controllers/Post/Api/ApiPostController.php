@@ -8,6 +8,7 @@ use App\Presenters\RequestParamsPresenter;
 use App\Services\Interfaces\IPostService;
 use App\Services\PostService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ApiPostController extends Controller
 {
@@ -48,7 +49,18 @@ class ApiPostController extends Controller
     public function show(int $id)
     {
         // ищет по id
-        return Post::findOrFail($id);
+
+        $p = Post::with('categories')->find($id);
+
+
+        // Если в модели описаны принципы отношений - писать запросы самому нет необходимости
+//        $c = DB::table('pivot_post_categories')
+//            ->where('post_id', '=', $id)
+//            ->join('categories', 'categories.id', '=', 'pivot_post_categories.category_id')
+//            ->get();
+
+        return $p;
+        // return $p->categories()->get();
         // return Post::query()->find($id);
     }
 
