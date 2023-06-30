@@ -10,16 +10,20 @@ use Illuminate\Support\Facades\Cache;
 class PostService implements IPostService
 {
 
-    public function index(RequestParamsPresenter $params)
-    {
-        $cacheKey = 'post.index.page' .
-            $params->page .'.perPage.' . $params->perPage;
-
-        $p = Cache::remember($cacheKey, 30, function ()
-        use ($params) {
-            return Post::paginate($params->perPage);
-        });
-
-        return $p;
+    public function index(RequestParamsPresenter $params){
+        return Post::paginate($params->perPage);
     }
+
+//    public function index(RequestParamsPresenter $params)
+//    {
+//        $cacheKey = 'post.index.page' .
+//            $params->page .'.perPage.' . $params->perPage;
+//
+//        $p = Cache::remember($cacheKey, 30, function ()
+//        use ($params) {
+//            return Post::paginate($params->perPage);
+//        });
+//
+//        return $p;
+//    }
 }
