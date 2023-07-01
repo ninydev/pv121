@@ -16,4 +16,8 @@ class Post extends Model
             'pivot_post_categories','post_id', 'category_id');
     }
 
+    public function author() {
+        return $this->belongsTo(User::class, 'author_id');
+    }
+
 }
