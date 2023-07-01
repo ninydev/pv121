@@ -1,15 +1,19 @@
 <script setup>
-import {useForm} from "@inertiajs/vue3";
+import {useForm, usePage} from "@inertiajs/vue3";
 import TextInput from "@/Components/TextInput.vue";
 import InputError from "@/Components/InputError.vue";
 import InputLabel from "@/Components/InputLabel.vue";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
 
 
-const post = {
-    title: "",
-    body: "",
-    img_url: null
+let post = usePage().props.post;
+
+if (post === undefined) {
+    post = {
+        title: "",
+        body: "",
+        img_url: null
+    }
 }
 
 const form = useForm({
@@ -18,6 +22,15 @@ const form = useForm({
     img_url: post.img_url, //
     img_blob: null // Для загрузки изображения
 });
+
+const sendForm = () => {
+    if(post.id !== undefined) {
+        form.put(route('posts.update', post.id))
+    }
+    else {
+        form.post(route('posts.store'))
+    }
+}
 </script>
 
 <template>
@@ -26,10 +39,10 @@ const form = useForm({
 
         <h2 class="text-lg font-medium text-gray-900">Post Information</h2>
 
-        <form @submit.prevent="form.post(route('post.create'))" class="mt-6 space-y-6">
+        <form @submit.prevent="sendForm()" class="mt-6 space-y-6">
 
             <div>
-                <InputLabel for="name" value="Title" />
+                <InputLabel for="name" value="Title"/>
 
                 <TextInput
                     id="title"
@@ -41,11 +54,11 @@ const form = useForm({
                     autocomplete="name"
                 />
 
-                <InputError class="mt-2" :message="form.errors.title" />
+                <InputError class="mt-2" :message="form.errors.title"/>
             </div>
 
             <div>
-                <InputLabel for="name" value="Body" />
+                <InputLabel for="name" value="Body"/>
 
                 <TextInput
                     id="body"
@@ -55,7 +68,7 @@ const form = useForm({
                     required
                 />
 
-                <InputError class="mt-2" :message="form.errors.body" />
+                <InputError class="mt-2" :message="form.errors.body"/>
             </div>
 
             <div class="flex items-center gap-4">
@@ -71,7 +84,6 @@ const form = useForm({
 
 
     </section>
-
 
 
 </template>
