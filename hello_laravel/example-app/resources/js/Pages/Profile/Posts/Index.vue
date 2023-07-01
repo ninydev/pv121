@@ -2,6 +2,8 @@
 
 import {Head, usePage} from "@inertiajs/vue3";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
+import PostListItem from "@/Pages/Profile/Posts/Partials/PostListItem.vue";
+import NavLink from "@/Components/NavLink.vue";
 
 // Получаю посты
 const posts = usePage().props.posts;
@@ -23,17 +25,13 @@ const posts = usePage().props.posts;
         </template>
 
         <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
-                <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
+            <PostListItem v-for="post in posts.data" :post="post" :key="post.id" />
+        </div>
 
-                    <ul>
-                        <li v-for="p in posts.data" :key="p.id">
-                            {{ p.title }}
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
+        <div>
+            <NavLink :href="route('posts.create')" >
+                Create
+            </NavLink>
         </div>
 
     </AuthenticatedLayout>

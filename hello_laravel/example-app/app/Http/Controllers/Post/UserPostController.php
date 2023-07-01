@@ -33,7 +33,7 @@ class UserPostController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render('Profile/Posts/Create');
     }
 
     /**
