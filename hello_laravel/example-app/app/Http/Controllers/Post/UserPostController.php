@@ -69,6 +69,9 @@ class UserPostController extends Controller
     public function edit(int $id, Request $request)
     {
         $editPost = Post::find($id);
+        if ($editPost == null) {
+            abort(404);
+        }
         if($editPost->getAttribute('author_id') != $request->user()->id) {
             abort(403);
         }
@@ -86,6 +89,11 @@ class UserPostController extends Controller
     public function update(RequestPostStore $request, int $id)
     {
         $editPost = Post::find($id);
+
+        if($editPost->getAttribute('author_id') != $request->user()->id) {
+            abort(403);
+        }
+
         $editPost->setAttribute('title', $request->input('title'));
         $editPost->setAttribute('body', $request->input('body'));
 
@@ -97,8 +105,16 @@ class UserPostController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(int $id, Request $request)
     {
-        //
+        $delPost = Post::find($id);
+        if ($delPost == null) {
+            abort(404);
+        }
+        if($delPost->getAttribute('author_id') != $request->user()->id) {
+            abort(403);
+        }
+        $delPost->delete();
+        return Redirect::route('posts.index');
     }
 }
