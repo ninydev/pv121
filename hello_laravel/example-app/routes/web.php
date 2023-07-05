@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Files\UploadFilesController;
 use App\Http\Controllers\Post\UserPostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
@@ -38,6 +39,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::get('/uploadFiles', [UploadFilesController::class, 'showForm'])->name('upload.files.show.form');
+    Route::post('/uploadFiles', [UploadFilesController::class, 'saveFile'])->name('upload.files.save.file');
 
 
 });
