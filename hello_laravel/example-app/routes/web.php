@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\Files\UploadFilesController;
 use App\Http\Controllers\Post\UserPostController;
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Profile\ProfileController;
+use App\Http\Controllers\Profile\UpdateAvatarController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -40,6 +41,9 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
+    Route::post('/profile/avatar', [UpdateAvatarController::class, 'store'])->name('profile.update.avatar');
+
+    // Изучали загрузку файлов
     Route::get('/uploadFiles', [UploadFilesController::class, 'showForm'])->name('upload.files.show.form');
     Route::post('/uploadFiles', [UploadFilesController::class, 'saveFile'])->name('upload.files.save.file');
 
