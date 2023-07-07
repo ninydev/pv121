@@ -12,6 +12,8 @@ class UpdateAvatarController extends Controller
 {
     public function store(RequestAvatarUpdate $request){
         if (! $request->hasFile('avatar')) {
+            dd ("No File");
+            die();
             return "No files in Request";
         }
 
@@ -31,7 +33,9 @@ class UpdateAvatarController extends Controller
         $user->avatar = $path;
         $user->save();
 
-        return Redirect::route('profile.edit');
+
+
+        // return Redirect::route('profile.edit');
     }
 
 }
