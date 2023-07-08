@@ -11,7 +11,7 @@ const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute
 const user = usePage().props.auth.user;
 
 const newAvatarBody = ref(null);
-const inputFile = ref();
+const cropAvatarBody = ref();
 
 const handleUploadAvatar =  (event) => {
     // Получить данные о файле
@@ -27,10 +27,6 @@ const handleUploadAvatar =  (event) => {
     // Прочитать файл
     reader.readAsDataURL(file);
 }
-
-// const  form = useForm ( {
-//     avatar : newAvatarBody.value
-// })
 
 
 // Функция для преобразования Data URL в Blob
@@ -49,16 +45,12 @@ const sendUpdateAvatar = (event) => {
     event.preventDefault();
     let formData = new FormData();
 
-    // let tagInputFile = document.getElementById('inputFile');
-    // console.log(tagInputFile.files);
-    // sendData.append('avatar', tagInputFile.files[0]);
+    const { canvas } = cropAvatarBody.value.getResult();
+    const blob  = dataURLtoBlob(canvas.toDataURL());
 
-    // Преобразовать тело картинки в Blob
-    const blob = dataURLtoBlob(newAvatarBody.value);
-
-    formData.append('avatar', blob, 'avatar.jpg');
-
+    formData.append('avatar', blob);
     formData.append('_token', csrfToken);
+
     fetch(route('profile.update.avatar'), {
         method: 'POST',
         body: formData
@@ -93,7 +85,7 @@ const sendUpdateAvatar = (event) => {
 
     <form @submit="sendUpdateAvatar">
 
-        <input type="file" name="avatar" accept="image/*" @change="handleUploadAvatar" id="inputFile">
+        <input type="file" name="avatar" accept="image/*" @change="handleUploadAvatar">
         <!-- добавляем ключ защиты -->
         <input type="hidden" name="_token" v-model=csrfToken>
         <input type="submit">
@@ -101,6 +93,7 @@ const sendUpdateAvatar = (event) => {
 
     <div v-if="newAvatarBody">
         <cropper
+            ref="cropAvatarBody"
             class="cropper"
             :src="newAvatarBody">
 
