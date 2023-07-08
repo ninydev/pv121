@@ -12,6 +12,7 @@ const user = usePage().props.auth.user;
 
 const newAvatarBody = ref(null);
 const cropAvatarBody = ref();
+const cropAvatarPrev = ref();
 
 const handleUploadAvatar =  (event) => {
     // Получить данные о файле
@@ -64,19 +65,12 @@ const sendUpdateAvatar = (event) => {
         .catch(err => {
             console.log(err)
         })
-    return false;
 
-    // form.post(route('profile.update.avatar'), {
-    //     preserveScroll: true,
-    //     onSuccess: () => {
-    //         console.log("Ok");
-    //     },
-    //     onError: (err) => {
-    //         console.log("Err")
-    //         console.log(err)
-    //     }
-    //
-    // });
+}
+
+const handleCropperChange = () => {
+    const { canvas } = cropAvatarBody.value.getResult();
+    cropAvatarPrev.value = canvas.toDataURL();
 }
 
 </script>
@@ -94,6 +88,7 @@ const sendUpdateAvatar = (event) => {
     <div v-if="newAvatarBody">
         <cropper
             ref="cropAvatarBody"
+            @change="handleCropperChange"
             class="cropper"
             :src="newAvatarBody">
 
@@ -112,6 +107,12 @@ const sendUpdateAvatar = (event) => {
                 <h3>New Avatar </h3>
                 <img :src="newAvatarBody"  width="100" />
             </td>
+
+            <td v-if="newAvatarBody">
+                <h3>New Avatar Crop </h3>
+                <img :src="cropAvatarPrev"  width="100" />
+            </td>
+
 
         </tr>
 

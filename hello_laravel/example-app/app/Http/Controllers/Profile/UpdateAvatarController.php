@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Profile;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Profile\RequestAvatarUpdate;
+use App\Mail\MailInfo;
 use App\Models\User;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 
@@ -12,9 +14,7 @@ class UpdateAvatarController extends Controller
 {
     public function store(RequestAvatarUpdate $request){
         if (! $request->hasFile('avatar')) {
-            dd ("No File");
-            die();
-            return "No files in Request";
+            return Redirect::route('profile.edit');
         }
 
         $fileNewAvatar = $request->file('avatar');
@@ -33,9 +33,12 @@ class UpdateAvatarController extends Controller
         $user->avatar = $path;
         $user->save();
 
+        Mail::mailer()
+            ->to($user)
+            ->send(new MailInfo());
 
 
-        // return Redirect::route('profile.edit');
+        return Redirect::route('profile.edit');
     }
 
 }
