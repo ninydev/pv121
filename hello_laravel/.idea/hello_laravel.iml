@@ -9,6 +9,10 @@
       <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/inertiajs/inertia-laravel" />
       <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/laravel/breeze" />
       <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/tightenco/ziggy" />
+      <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/aws/aws-crt-php" />
+      <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/aws/aws-sdk-php" />
+      <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/league/flysystem-aws-s3-v3" />
+      <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/mtdowling/jmespath.php" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

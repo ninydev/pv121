@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Profile\RequestAvatarUpdate;
 use App\Mail\MailInfo;
 use App\Models\User;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
@@ -29,13 +30,23 @@ class UpdateAvatarController extends Controller
             Storage::delete($fileOldAvatar);
         }
 
+        $bucket = 'storage';
+        if (!Storage::disk('minio')->exists($bucket)) {
+            Storage::disk('minio')->makeDirectory($bucket);
+        }
+
+
+        Storage::disk('minio')->put(
+            'avatars/' . $user->id ."/" . date("Y-m-d") ,
+            $fileNewAvatar);
+
 
         $user->avatar = $path;
         $user->save();
 
-        Mail::mailer()
-            ->to($user)
-            ->send(new MailInfo());
+//        Mail::mailer()
+//            ->to($user)
+//            ->send(new MailInfo());
 
 
         return Redirect::route('profile.edit');
