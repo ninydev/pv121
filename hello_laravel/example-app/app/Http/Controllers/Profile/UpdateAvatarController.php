@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Profile;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Profile\RequestAvatarUpdate;
+use App\Jobs\TestJob;
 use App\Mail\MailInfo;
 use App\Models\User;
 use Illuminate\Support\Facades\Log;
@@ -30,15 +31,15 @@ class UpdateAvatarController extends Controller
             Storage::delete($fileOldAvatar);
         }
 
-        $bucket = 'storage';
-        if (!Storage::disk('minio')->exists($bucket)) {
-            Storage::disk('minio')->makeDirectory($bucket);
-        }
-
-
-        Storage::disk('minio')->put(
-            'avatars/' . $user->id ."/" . date("Y-m-d") ,
-            $fileNewAvatar);
+//        $bucket = 'storage';
+//        if (!Storage::disk('minio')->exists($bucket)) {
+//            Storage::disk('minio')->makeDirectory($bucket);
+//        }
+//
+//
+//        Storage::disk('minio')->put(
+//            'avatars/' . $user->id ."/" . date("Y-m-d") ,
+//            $fileNewAvatar);
 
 
         $user->avatar = $path;
@@ -47,6 +48,10 @@ class UpdateAvatarController extends Controller
 //        Mail::mailer()
 //            ->to($user)
 //            ->send(new MailInfo());
+
+        $job = TestJob::dispatch(); // ->delay(now()->addMinutes(10));
+        $job = TestJob::dispatch()->delay(now()->addMinutes(1));
+        $job = TestJob::dispatch()->delay(now()->addMinutes(2));
 
 
         return Redirect::route('profile.edit');
