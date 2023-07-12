@@ -36,6 +36,7 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
 
     Route::get('/socket', [SocketController::class, 'index'])->name('socket.index');
+    Route::get('/socket/emit', [SocketController::class, 'emit'])->name('socket.emit');
 
     // Админка для моих постов
     Route::resource('/profile/posts', UserPostController::class);

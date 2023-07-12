@@ -14,6 +14,8 @@
       <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/laravel/horizon" />
       <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/league/flysystem-aws-s3-v3" />
       <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/mtdowling/jmespath.php" />
+      <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/ashiina/socket.io-emitter" />
+      <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/ptrofimov/tinyredisclient" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

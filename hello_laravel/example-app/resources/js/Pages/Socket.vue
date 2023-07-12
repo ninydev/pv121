@@ -21,6 +21,11 @@ socket.on('connect_error', (data) => {
     console.log(data)
 })
 
+socket.on('controller_event', (data) => {
+    toast.success('Event: \n' + data);
+    console.log(data);
+})
+
 // Пинг с сервера
 socket.on('ping', (data) => {
     toast.info('Ping from server: \n' + new Date(data).toLocaleString(), {
@@ -32,6 +37,17 @@ socket.on('ping', (data) => {
 });
 
 
+const doSend = () => {
+    fetch('/socket/emit')
+        .then(res => res.text())
+        .then(txt => {
+            console.log('ok')
+        })
+        .catch( err => {
+            toast.error(err)
+            console.log(err)
+        })
+}
 
 
 
@@ -50,6 +66,9 @@ socket.on('ping', (data) => {
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 text-gray-900">Ждем сокетов</div>
+                    <div class="p-6 text-gray-900">
+                        <button @click="doSend"> Emit </button>
+                    </div>
                 </div>
             </div>
         </div>

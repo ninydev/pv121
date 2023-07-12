@@ -62,5 +62,5 @@ Promise.all([pubClient.connect(), subClient.connect()]).then(() => {
     setInterval(() =>{
         io.emit('ping', Date.now())
         console.debug('ping')
-    }, 10000)
+    }, 60000)
 });
