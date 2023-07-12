@@ -21,6 +21,16 @@ socket.on('connect_error', (data) => {
     console.log(data)
 })
 
+// Пинг с сервера
+socket.on('ping', (data) => {
+    toast.info('Ping from server: \n' + new Date(data).toLocaleString(), {
+        theme: 'colored',
+        position: toast.POSITION.BOTTOM_RIGHT,
+        transition: "zoom",
+        autoClose: 500
+    });
+});
+
 
 
 

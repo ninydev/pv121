@@ -57,4 +57,10 @@ Promise.all([pubClient.connect(), subClient.connect()]).then(() => {
     })
 
     io.listen(SERVER_PORT);
+
+    // Ping service
+    setInterval(() =>{
+        io.emit('ping', Date.now())
+        console.debug('ping')
+    }, 10000)
 });
