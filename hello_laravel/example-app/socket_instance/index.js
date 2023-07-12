@@ -15,6 +15,7 @@ const SERVER_PORT = process.env.SERVER_PORT || 3000;
  * Import modules
  */
 import { Server } from 'socket.io';
+import { createServer } from 'http';
 import { createClient } from 'redis';
 import { createAdapter } from '@socket.io/redis-adapter';
 
@@ -35,7 +36,12 @@ subClient.on('connect', () => {
 /**
  * Create socket server
  */
-const io = new Server();
+const httpServer = createServer();
+const io = new Server(httpServer, {
+    cors: {
+        origin: "http://localhost"
+    }
+});
 
 Promise.all([pubClient.connect(), subClient.connect()]).then(() => {
 

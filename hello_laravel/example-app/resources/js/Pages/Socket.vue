@@ -2,6 +2,30 @@
 
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import {Head} from "@inertiajs/vue3";
+import {toast} from "vue3-toastify";
+import {io} from "socket.io-client";
+
+const socket = io('http://localhost:3000/')
+
+socket.on('socket.myNameIs', (data) => {
+    toast.success('Connect to: ' + data)
+})
+
+// Реакция на отключение связи
+socket.on('disconnect', (data) => {
+    toast.error(data)
+})
+
+socket.on('connect_error', (data) => {
+    toast.error(data)
+    console.log(data)
+})
+
+
+
+
+
+
 </script>
 
 <template>
