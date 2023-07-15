@@ -5,6 +5,8 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/admin',
+  publicPath: '/admin',
   plugins: [vue()],
   resolve: {
     alias: {

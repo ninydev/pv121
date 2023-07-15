@@ -5,11 +5,9 @@ services:
         build:
             context: ./api/laravel/core
             dockerfile: Dockerfile
+        command: sh -c "composer install && /var/www/html/artisan serve --host=0.0.0.0"
         volumes:
             - './api/laravel/core:/var/www/html'
-        command: 'php artisan serve --host=0.0.0.0'
-        ports:
-            - '8000:80'
         extra_hosts:
             - 'host.docker.internal:host-gateway'
         networks:
@@ -102,6 +100,7 @@ services:
         depends_on:
             - front.public
             - front.admin
+            - api.laravel
 
 networks:
     pv121:

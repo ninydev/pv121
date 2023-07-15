@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="init laravel">
-      <change afterPath="$PROJECT_DIR$/../hello_laravel/.idea/codeception.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello_laravel/.idea/phpspec.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello_laravel/example-app/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello_laravel/example-app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../hello_laravel/example-app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/laravel/core/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admin/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admin/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/public/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/public/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/public/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sockets/socket_instance/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/sockets/socket_instance/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +65,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/api/laravel/core" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/api/laravel/core" />
       <recent name="$PROJECT_DIR$/front/public" />
       <recent name="$PROJECT_DIR$/front/admin" />
       <recent name="$PROJECT_DIR$/sockets/socket_instance" />
@@ -74,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1689350558051</updated>
       <workItem from="1689350559077" duration="12843000" />
-      <workItem from="1689418398892" duration="643000" />
+      <workItem from="1689418398892" duration="7409000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -108,11 +115,38 @@
       <option name="project" value="LOCAL" />
       <updated>1689357789121</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="init laravel">
+      <option name="closed" value="true" />
+      <created>1689419289926</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689419289926</updated>
+    </task>
+    <task id="LOCAL-00006" summary="init laravel">
+      <option name="closed" value="true" />
+      <created>1689419306311</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689419306311</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
