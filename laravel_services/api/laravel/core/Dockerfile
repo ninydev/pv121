@@ -16,5 +16,3 @@ RUN pecl install redis && docker-php-ext-enable redis
 
 # Открываем порт для доступа к приложению
 EXPOSE 8000
-
-# CMD /var/www/html/artisan serve --host=0.0.0.0

@@ -16,6 +16,9 @@ services:
             - NAME=api.laravel
         env_file:
             - .env
+        depends_on:
+            - db.mysql.main
+            - redis.socket
 
     redis.socket:
         image: 'redis:alpine'
@@ -101,6 +104,19 @@ services:
             - front.public
             - front.admin
             - api.laravel
+
+    db.mysql.main:
+        image: 'mysql/mysql-server:latest'
+        ports:
+            - '33121:3306' # Что бы я мог из редактора посмотреть - что творится в базе данных
+        volumes:
+            - './volumes/db/mysql/main:/var/lib/mysql'
+        extra_hosts:
+            - 'host.docker.internal:host-gateway'
+        networks:
+            - pv121
+        env_file:
+            - .env
 
 networks:
     pv121:
