@@ -2,7 +2,9 @@ version: '3'
 services:
 
     api.laravel:
-        build: api/laravel/core
+        build:
+            context: ./api/laravel/core
+            dockerfile: Dockerfile
         volumes:
             - './api/laravel/core:/var/www/html'
         command: 'php artisan serve --host=0.0.0.0'

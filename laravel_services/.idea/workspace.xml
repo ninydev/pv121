@@ -5,142 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="init laravel">
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Console/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Exceptions/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/TrimStrings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/TrustHosts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/ValidateSignature.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/artisan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/bootstrap/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/bootstrap/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/broadcasting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/cors.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/filesystems.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/hashing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/logging.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/queue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/sanctum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/config/view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/database/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/database/factories/UserFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/php.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/resources/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/resources/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/resources/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/resources/views/welcome.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/routes/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/routes/channels.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/routes/console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/storage/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/storage/app/public/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/storage/framework/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/storage/framework/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/storage/framework/cache/data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/storage/framework/testing/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/storage/framework/views/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/storage/logs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/tests/CreatesApplication.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/tests/TestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/tests/Unit/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/vite.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/.eslintrc.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/.prettierrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/components/forms/SendEmailForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/components/forms/SendImageForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/helpers/myFetch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/helpers/myLocalStorage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/helpers/myLog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/stores/sendEmail.store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/stores/sendImage.store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/stores/sockets/socket.main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/views/AboutView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/views/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/vite.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/.eslintrc.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/.prettierrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/components/forms/SendEmailForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/components/forms/SendImageForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/helpers/myFetch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/helpers/myLocalStorage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/helpers/myLog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/stores/sendEmail.store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/stores/sendImage.store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/stores/sockets/socket.main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/views/AboutView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/views/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/vite.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sockets/socket_instance/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sockets/socket_instance/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/laravel/core/Dockerfile11" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/composer.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storages/minio/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/storages/minio/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storages/minio/app-init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/storages/minio/app-init.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689350558051</updated>
-      <workItem from="1689350559077" duration="7179000" />
+      <workItem from="1689350559077" duration="12843000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -229,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689352017137</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init laravel">
+      <option name="closed" value="true" />
+      <created>1689357789121</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689357789121</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
