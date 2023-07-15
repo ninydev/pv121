@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="init laravel">
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/Dockerfile11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_laravel/.idea/codeception.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_laravel/.idea/phpspec.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_laravel/example-app/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello_laravel/example-app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../hello_laravel/example-app/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/laravel/core/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/laravel/core/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/laravel/core/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +43,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/keeper/PhpstormProjects/pv121/laravel_services/api/laravel/core",
+    "last_opened_file_path": "/home/keeper/PhpstormProjects/pv121/laravel_services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,6 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1689350558051</updated>
       <workItem from="1689350559077" duration="12843000" />
+      <workItem from="1689418398892" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
