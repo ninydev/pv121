@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Auth JWT in php">
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Traits/Uuids.php" afterDir="false" />
+    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="UUID">
+      <change afterPath="$PROJECT_DIR$/front/public/src/components/forms/auth/RegisterForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/public/src/stores/auth.store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/laravel/core/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/laravel/core/database/migrations/2023_07_15_154657_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/database/migrations/2023_07_15_154657_create_roles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/public/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/src/App.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -43,28 +44,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/keeper/PhpstormProjects/pv121/laravel_services&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/snap/phpstorm/345/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/keeper/PhpstormProjects/pv121/laravel_services/front/public/src/components/forms/auth",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/snap/phpstorm/345/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front/public/src/components/forms/auth" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/api/laravel/core" />
       <recent name="$PROJECT_DIR$/front/public" />
       <recent name="$PROJECT_DIR$/front/admin" />
-      <recent name="$PROJECT_DIR$/sockets/socket_instance" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -142,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689440054192</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="UUID">
+      <option name="closed" value="true" />
+      <created>1689440845920</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689440845920</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +172,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="init laravel" />
     <MESSAGE value="Auth JWT in php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auth JWT in php" />
+    <MESSAGE value="UUID" />
+    <option name="LAST_COMMIT_MESSAGE" value="UUID" />
   </component>
 </project>

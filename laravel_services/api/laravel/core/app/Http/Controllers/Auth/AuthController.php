@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
@@ -43,11 +44,18 @@ class AuthController extends Controller
 
     public function register(Request $request)
     {
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255', // |unique:users
+            'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6',
         ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'errors' => $validator->errors(),
+            ], 422);
+        }
 
         $user = User::create([
             'name' => $request->name,
@@ -56,6 +64,7 @@ class AuthController extends Controller
         ]);
 
         return response()->json([
+            'success' => true,
             'message' => 'User created successfully',
             'user' => $user
         ]);
@@ -65,6 +74,7 @@ class AuthController extends Controller
     {
         Auth::logout();
         return response()->json([
+            'success' => true,
             'message' => 'Successfully logged out',
         ]);
     }
@@ -72,6 +82,7 @@ class AuthController extends Controller
     public function refresh()
     {
         return response()->json([
+            'success' => true,
             'user' => Auth::user(),
             'authorisation' => [
                 'token' => Auth::refresh(),
