@@ -12,7 +12,7 @@ COPY ./app-init.sh /tmp/app-init.sh
 RUN chmod +x /tmp/app-init.sh
 
 # запустить скрипт при сборке контейнера
-RUN /tmp/app-init.sh
+# RUN /tmp/app-init.sh
 
 # команда для запуска Minio сервера
 #CMD ["minio", "server", "/data"]
