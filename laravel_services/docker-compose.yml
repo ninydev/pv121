@@ -5,7 +5,7 @@ services:
         build:
             context: ./api/laravel/core
             dockerfile: Dockerfile
-        command: sh -c "composer install && /var/www/html/artisan serve --host=0.0.0.0"
+        command: sh -c "composer update && /var/www/html/artisan serve --host=0.0.0.0"
         volumes:
             - './api/laravel/core:/var/www/html'
         extra_hosts:

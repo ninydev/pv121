@@ -1,0 +1,78 @@
+openapi: 3.0.3
+info:
+  title: My laravel
+  description: |-
+    Описание запросов для моего сайта
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: keeper@ninydev.com
+  license:
+    name: BeerWare
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.11
+servers:
+  - url: http://localhost/api
+
+
+tags:
+  - name: auth
+    description: Процесс регистрации пользователя
+
+
+paths:
+
+  /register:
+    post:
+      tags:
+        - auth
+      description: регистрирует пользователя в системе
+      operationId: auth.register
+      requestBody:
+        description: нам нужно отправить сущность пользователь
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/userRegister'
+        required: true
+      responses:
+        '200':
+          description: пользователь создан
+        '422':
+          description: что-то пошло не так - ошибка ввода
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/hasError'
+
+components:
+  schemas:
+    hasError:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: Успешна ли была операция
+          example: false
+        errors:
+          type: array
+          description: массив ошибок при операции
+          example: ['Ошибка в пароле', 'ошибка в почте']
+
+    userRegister:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Имя пользователя
+        email:
+          type: string
+          format: email
+          description: Адрес электронной почты пользователя
+        password:
+          type: string
+          format: password
+          description: Пароль пользователя
+      required:
+        - username
+        - email
+        - password
