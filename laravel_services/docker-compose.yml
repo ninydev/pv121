@@ -90,6 +90,21 @@ services:
         env_file:
             - .env
 
+    front.docs:
+        build: ./docs
+        volumes:
+            - ./docs:/usr/src/app
+        command: sh -c " npm install && npm start "
+        extra_hosts:
+            - 'host.docker.internal:host-gateway'
+        networks:
+            - pv121
+        environment:
+            - NAME=front.docs
+        env_file:
+            - .env
+
+
     nginx:
         image: nginx:alpine
         volumes:
