@@ -10,8 +10,20 @@ onMounted( () => {
 </script>
 
 <template>
-  <header> Admin </header>
-  <footer> &copy; itStep 2023 </footer>
+
+  <div class="wrapper dark-mode">
+
+    <header class="main-header">  main-header </header>
+    <aside class="main-sidebar">  main-main-sidebar </aside>
+    <div class="content-wrapper">
+      Content here
+    </div>
+    <footer class="main-footer"> &copy; 2023 IT Step</footer>
+
+
+
+
+  </div>
 
 </template>
 

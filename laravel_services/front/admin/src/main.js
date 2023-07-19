@@ -1,3 +1,5 @@
+// стиль админа
+import 'admin-lte/dist/css/adminlte.min.css'
 // Главная стилистика
 import './assets/main.css'
 

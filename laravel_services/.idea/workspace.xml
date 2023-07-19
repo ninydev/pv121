@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Swagger docs">
-      <change afterPath="$PROJECT_DIR$/docs/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/apis/post.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/apis/auth.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/apis/auth.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admin/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admin/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admin/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,7 @@
       <updated>1689350558051</updated>
       <workItem from="1689350559077" duration="12843000" />
       <workItem from="1689418398892" duration="9291000" />
-      <workItem from="1689778303349" duration="8385000" />
+      <workItem from="1689778303349" duration="9980000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -206,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689783926567</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Swagger docs">
+      <option name="closed" value="true" />
+      <created>1689787285579</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1689787285579</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
