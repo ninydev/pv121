@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Swagger docs">
+    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="init laravel">
+      <change afterPath="$PROJECT_DIR$/docs/auth.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/doc.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/post.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/admin/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/admin/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/assets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/admin/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/apis/auth.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/apis/post.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,13 +29,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,63 +49,31 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.20.1",
-    "javascript.nodejs.core.library.typings.version": "16.18.38",
-    "last_opened_file_path": "/home/keeper/PhpstormProjects/pv121/laravel_services/docs/apis",
+    "last_opened_file_path": "/home/keeper/PhpstormProjects/pv121/laravel_services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/snap/phpstorm/345/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/docs/apis" />
-      <recent name="$PROJECT_DIR$/docs" />
-      <recent name="$PROJECT_DIR$/front/public/src/components/forms/auth" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/api/laravel/core" />
+      <recent name="$PROJECT_DIR$/front/public" />
+      <recent name="$PROJECT_DIR$/front/admin" />
+      <recent name="$PROJECT_DIR$/sockets/socket_instance" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="SwaggerCodegen">
-      <option name="activeConfigurationType" value="FILE" />
-      <option name="configurationPath" value="" />
-      <option name="customJreEnabled" value="false" />
-      <option name="customTemplatesPath" value="" />
-      <option name="enableDebugLogging" value="false" />
-      <option name="generateToPath" value="$PROJECT_DIR$/gen" />
-      <option name="generationParameters">
-        <list />
-      </option>
-      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
-      <option name="jdkPath" value="" />
-      <option name="language" value="java" />
-      <option name="specificationPath" value="$PROJECT_DIR$/docs/apis/auth.yaml" />
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/docs/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.start" />
-      </list>
-    </recent_temporary>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -113,8 +84,10 @@
       <option name="presentableId" value="Default" />
       <updated>1689350558051</updated>
       <workItem from="1689350559077" duration="12843000" />
-      <workItem from="1689418398892" duration="9291000" />
-      <workItem from="1689778303349" duration="9980000" />
+      <workItem from="1689418398892" duration="9323000" />
+      <workItem from="1689608923975" duration="7000" />
+      <workItem from="1689794576783" duration="796000" />
+      <workItem from="1689888775770" duration="3299000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -172,47 +145,7 @@
       <option name="project" value="LOCAL" />
       <updated>1689426072485</updated>
     </task>
-    <task id="LOCAL-00008" summary="Auth JWT in php">
-      <option name="closed" value="true" />
-      <created>1689440054192</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1689440054192</updated>
-    </task>
-    <task id="LOCAL-00009" summary="UUID">
-      <option name="closed" value="true" />
-      <created>1689440845920</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1689440845920</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Register">
-      <option name="closed" value="true" />
-      <created>1689443206749</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1689443206749</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Swagger docs">
-      <option name="closed" value="true" />
-      <created>1689783926567</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1689783926567</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Swagger docs">
-      <option name="closed" value="true" />
-      <created>1689787285579</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1689787285579</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,12 +163,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="init laravel" />
-    <MESSAGE value="Auth JWT in php" />
-    <MESSAGE value="UUID" />
-    <MESSAGE value="Register" />
-    <MESSAGE value="Swagger docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Swagger docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="init laravel" />
   </component>
 </project>

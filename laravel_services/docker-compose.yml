@@ -91,18 +91,17 @@ services:
             - .env
 
     front.docs:
-        build: ./docs
+        image: swaggerapi/swagger-ui
         volumes:
-            - ./docs:/usr/src/app
-        command: sh -c " npm install && npm start "
+            - ./docs:/usr/share/nginx/html/docs
+        ports:
+            - "8080:8080"
         extra_hosts:
             - 'host.docker.internal:host-gateway'
         networks:
             - pv121
-        environment:
-            - NAME=front.docs
         env_file:
-            - .env
+            -   ./docs/doc.env
 
 
     nginx:
