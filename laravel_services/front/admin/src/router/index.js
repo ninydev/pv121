@@ -41,7 +41,7 @@ router.beforeEach((to, from, next) => {
     myLog('go Login')
     next('login')
   } else {
-    myLog('go page')
+    myLog('go Page')
     next()
   }
 });

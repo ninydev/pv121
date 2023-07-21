@@ -4,22 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Swagger docs">
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Users/AdminUserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Users/PublicUserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/stores/auth.store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/views/LoginView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/admin/src/views/UsersView.vue" afterDir="false" />
+    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Front Login beforeEach">
+      <change afterPath="$PROJECT_DIR$/front/admin/src/components/forms/auth/LoginForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/laravel/core/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/laravel/core/database/migrations/2023_07_15_154657_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/database/migrations/2023_07_15_154657_create_roles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/laravel/core/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doc.env" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doc.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/admin/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/admin/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/admin/src/views/AboutView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/views/DashBoardView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/admin/src/views/HomeView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admin/src/stores/auth.store.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/stores/auth.store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admin/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/views/LoginView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +119,7 @@
       <updated>1689350558051</updated>
       <workItem from="1689350559077" duration="12843000" />
       <workItem from="1689418398892" duration="9291000" />
-      <workItem from="1689778303349" duration="16872000" />
+      <workItem from="1689778303349" duration="17868000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -235,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689788910926</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Front Login beforeEach">
+      <option name="closed" value="true" />
+      <created>1689960714144</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1689960714144</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +257,7 @@
     <MESSAGE value="UUID" />
     <MESSAGE value="Register" />
     <MESSAGE value="Swagger docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Swagger docs" />
+    <MESSAGE value="Front Login beforeEach" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front Login beforeEach" />
   </component>
 </project>
