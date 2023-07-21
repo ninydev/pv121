@@ -17,10 +17,13 @@ return new class extends Migration
             $table->string('name');
         });
 
+        // Допустимо - но лучше делать через механизм Seed
         DB::table('roles')->insert([
+            'id' => 1,
             'name' => 'guest'
         ]);
         DB::table('roles')->insert([
+            'id' => 2,
             'name' => 'admin'
         ]);
     }
