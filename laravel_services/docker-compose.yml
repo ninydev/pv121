@@ -57,6 +57,7 @@ services:
         env_file:
             - .env
         command: server --console-address :9009 /data
+        #command: server --console-address :9009/store/admin /data
         extra_hosts:
             - 'host.docker.internal:host-gateway'
         networks:

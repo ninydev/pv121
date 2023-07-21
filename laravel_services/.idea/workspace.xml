@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="init laravel">
-      <change afterPath="$PROJECT_DIR$/docs/auth.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/doc.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/post.yaml" afterDir="false" />
+    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Add Docs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/apis/auth.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/apis/post.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storages/minio/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/storages/minio/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storages/minio/app-init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/storages/minio/app-init.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +80,7 @@
       <workItem from="1689418398892" duration="9323000" />
       <workItem from="1689608923975" duration="7000" />
       <workItem from="1689794576783" duration="796000" />
-      <workItem from="1689888775770" duration="3299000" />
+      <workItem from="1689888775770" duration="8179000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -145,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689426072485</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add Docs">
+      <option name="closed" value="true" />
+      <created>1689892447841</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689892447841</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +167,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="init laravel" />
-    <option name="LAST_COMMIT_MESSAGE" value="init laravel" />
+    <MESSAGE value="Add Docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Docs" />
   </component>
 </project>
