@@ -37,7 +37,7 @@ router.beforeEach((to, from, next) => {
   }
 
   // На все остальные страницы я могу попасть только в том случае, если я залогинен
-  if(! authStore.isLogin) {
+  if(! authStore.isAdmin) {
     myLog('go Login')
     next('login')
   } else {

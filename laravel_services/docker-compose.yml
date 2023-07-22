@@ -29,10 +29,19 @@ services:
         networks:
             - pv121
 
+    redis.laravel:
+        image: 'redis:alpine'
+        volumes:
+            - './volumes/db/redis/laravel:/data'
+        extra_hosts:
+            - 'host.docker.internal:host-gateway'
+        ports:
+            - "6379:6379"
+        networks:
+            - pv121
+
     socket.jonny:
         build: ./sockets/socket_instance
-        ports:
-            - "3000:3000"
         volumes:
             - ./sockets/socket_instance:/usr/src/app
         command: sh -c " npm install && npm start "

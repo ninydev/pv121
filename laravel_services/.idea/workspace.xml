@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Front Login for Admin">
-      <change beforePath="$PROJECT_DIR$/../hello_laravel/.idea/hello_laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../hello_laravel/.idea/hello_laravel.iml" afterDir="false" />
+    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Socket Auth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/admin/src/stores/sockets/socket.main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/stores/sockets/socket.main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admin/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admin/src/stores/auth.store.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/stores/auth.store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/public/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sockets/socket_instance/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/sockets/socket_instance/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sockets/socket_instance/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/sockets/socket_instance/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sockets/socket_instance/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/sockets/socket_instance/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,9 @@
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis"
+    ],
     "vue.recent.templates": [
       "Vue Composition API Component"
     ]
@@ -121,7 +124,7 @@
       <updated>1689350558051</updated>
       <workItem from="1689350559077" duration="12843000" />
       <workItem from="1689418398892" duration="9291000" />
-      <workItem from="1689778303349" duration="26741000" />
+      <workItem from="1689778303349" duration="32991000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -243,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689961910035</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Socket Auth">
+      <option name="closed" value="true" />
+      <created>1690020031724</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1690020031724</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +280,7 @@
     <MESSAGE value="Swagger docs" />
     <MESSAGE value="Front Login beforeEach" />
     <MESSAGE value="Front Login for Admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Front Login for Admin" />
+    <MESSAGE value="Socket Auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Socket Auth" />
   </component>
 </project>

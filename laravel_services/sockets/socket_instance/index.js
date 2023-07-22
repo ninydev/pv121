@@ -56,7 +56,7 @@ io.use((socket, next) => {
         const decodedToken = jwt.verify(token, JWT_SECRET, { algorithms: [JWT_ALGO] });
         console.debug('Расшифрованный токен:', decodedToken);
         const userId = decodedToken.sub; // Получаем Id пользователя
-        socket.join('userId_' + userId); // Присоединяем его в нашу комнату
+        socket.join('userId_' + userId); // Присоединяем его в персональную комнату
     } catch (err) {
         console.error('Ошибка расшифровки токена:', err.message);
     }

@@ -7,6 +7,7 @@ import router from "@/router";
 export const useAuthStore = defineStore('auth', {
     state:() => ({
         isLogin: false,
+        isAdmin: false, // Показатель того, что пользователь - админ
         isPreload: false,
         user: {},
         token: null
@@ -30,7 +31,12 @@ export const useAuthStore = defineStore('auth', {
                 this.user = res.user;
                 this.token = res.authorization.token;
                 this.isLogin = true;
-                router.push('/'); // Перейти на глваную страницу
+                this.isAdmin = this.user.role_id === 2;
+                if(!this.isAdmin) {
+                    toast.error(" Ві не админ - вам сюда незя")
+                } else {
+                    router.push('/'); // Перейти на глваную страницу
+                }
             }).catch(err => {
                 myLog(err)
                 toast.error('Err')
