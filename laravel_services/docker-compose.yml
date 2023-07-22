@@ -104,7 +104,6 @@ services:
         env_file:
             -   ./docs/doc.env
 
-
     nginx:
         image: nginx:alpine
         volumes:

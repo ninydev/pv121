@@ -15,7 +15,11 @@ export const useSocketMainStore = defineStore('socket.main', {
          */
         connect() {
             if (this.isConnect) return
-            this.socket = io('/')
+            this.socket = io('/', {
+                auth: {
+                    token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9sb2dpbiIsImlhdCI6MTY5MDAxOTM1MiwiZXhwIjoxNjkwMDIyOTUyLCJuYmYiOjE2OTAwMTkzNTIsImp0aSI6InpRTnhiRDVRREdyRElBMkgiLCJzdWIiOiJhZDJiYmQwMC02OGNjLTRjMWYtOGZhYy05MjE5Mjg4Mjg4NGQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.X1Fu1C7Yz0Exah1zKLXss3ObaU249bO_Hu9lJnegykQ'
+                }
+            })
             this.isConnect = true
 
             // Реакция на сообщение с сервера
@@ -23,20 +27,16 @@ export const useSocketMainStore = defineStore('socket.main', {
                 toast.success('Connect to: ' + data)
             })
 
+            this.socket.on('fromServer', (data) => {
+                myLog(data)
+                toast.success(data)
+            })
+
             //Реакция на любое сообщение
             this.socket.on('message', (data) => {
                 myLog('Catch message from server:', data);
             });
 
-            this.socket.on('user.id.10', (data) => {
-                myLog(data)
-                switch (data.type) {
-                    case 'change.Role':
-                        break;
-                    case 'user.block':
-                        break;
-                }
-            })
 
             // Пинг с сервера
             this.socket.on('ping', (data) => {
