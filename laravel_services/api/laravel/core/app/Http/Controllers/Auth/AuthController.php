@@ -47,7 +47,8 @@ class AuthController extends Controller
 
     public function register(Request $request, ISocketService $socketService)
     {
-        $socketService->to("Try Reg", 'admins');
+        $socketService->to("Try Reg Admin", 'admins');
+        $socketService->toUser("Try Reg User", 'ad2bbd00-68cc-4c1f-8fac-92192882884d');
 
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',

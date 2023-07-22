@@ -14,10 +14,12 @@ interface ISocketService
     /**
      * Отослать сообщение в конкретную комнату
      * @param  $eventBody
-     * @param string $eventTo
+     * @param string $eventRoom
      * @param string $eventName
      */
-    function to(mixed $eventBody, string $eventTo, string $eventName = 'message');
+    function to(mixed $eventBody, string $eventRoom, string $eventName = 'message');
+
+    function toUser(mixed $eventBody, string $userId, string $eventName = 'message');
 
 
 }

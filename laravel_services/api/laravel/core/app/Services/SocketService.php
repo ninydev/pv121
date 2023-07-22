@@ -24,8 +24,13 @@ class SocketService implements ISocketService
         $this->emitter->emit($eventName, json_encode($eventBody));
     }
 
-    function to(mixed $eventBody, string $eventTo, string $eventName = 'message')
+    function to(mixed $eventBody, string $eventRoom, string $eventName = 'message')
     {
-        $this->emitter->to($eventTo)->emit($eventName, json_encode($eventBody));
+        $this->emitter->to($eventRoom)->emit($eventName, json_encode($eventBody));
+    }
+
+    function toUser(mixed $eventBody, string $userId, string $eventName = 'message')
+    {
+        $this->emitter->to('userId_' . $userId)->emit($eventName, json_encode($eventBody));
     }
 }
