@@ -2,6 +2,7 @@ import {defineStore} from "pinia";
 import {toast} from "vue3-toastify";
 import {io} from "socket.io-client";
 import myLog from "@/helpers/myLog";
+import {useAuthStore} from "@/stores/auth.store";
 
 
 export const useSocketMainStore = defineStore('socket.main', {
@@ -14,27 +15,31 @@ export const useSocketMainStore = defineStore('socket.main', {
          * Процесс установки соединения
          */
         connect() {
+            // Мне необходимо проверить - а есть ли авторизация
+            const authStore = useAuthStore()
+            const token = authStore.token;
+            if (token === null) {
+                toast.error("У вас нет прав для установления соединения")
+                return;
+            }
+
             if (this.isConnect) return
             this.socket = io('/', {
                 auth: {
-                    token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9sb2dpbiIsImlhdCI6MTY5MDAxOTM1MiwiZXhwIjoxNjkwMDIyOTUyLCJuYmYiOjE2OTAwMTkzNTIsImp0aSI6InpRTnhiRDVRREdyRElBMkgiLCJzdWIiOiJhZDJiYmQwMC02OGNjLTRjMWYtOGZhYy05MjE5Mjg4Mjg4NGQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.X1Fu1C7Yz0Exah1zKLXss3ObaU249bO_Hu9lJnegykQ'
+                    token: token
                 }
             })
             this.isConnect = true
 
-            // Реакция на сообщение с сервера
+            // Реакция на сообщение с именем сервера
             this.socket.on('socket.myNameIs', (data) => {
                 toast.success('Connect to: ' + data)
-            })
-
-            this.socket.on('fromServer', (data) => {
-                myLog(data)
-                toast.success(data)
             })
 
             //Реакция на любое сообщение
             this.socket.on('message', (data) => {
                 myLog('Catch message from server:', data);
+                toast.success(data)
             });
 
 

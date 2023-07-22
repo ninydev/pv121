@@ -2,6 +2,8 @@
 import {onMounted} from "vue";
 import {useSocketMainStore} from "@/stores/sockets/socket.main";
 
+// Поскольку я админ - я буду подключаться только в момент, когда я логинюсь в админку
+// Но - проверку я выполню в момент подключения
 onMounted( () => {
   const socketsMainStore = useSocketMainStore()
   socketsMainStore.connect()
