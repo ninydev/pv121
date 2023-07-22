@@ -88,5 +88,8 @@ setInterval(() =>{
 
 // Пинг сервера для конкретного пользователя (всех его сокетов)
 setInterval(() =>{
-    io.to('userId_ad2bbd00-68cc-4c1f-8fac-92192882884d').emit('fromServer', Date.now())
+    io.to('userId_ad2bbd00-68cc-4c1f-8fac-92192882884d').emit('message', 'to user id')
+}, 10000)
+setInterval(() =>{
+    io.emit('message', 'to all')
 }, 10000)

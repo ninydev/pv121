@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Socket Auth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/admin/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/admin/src/stores/auth.store.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/stores/auth.store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/admin/src/stores/sockets/socket.main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/stores/sockets/socket.main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/public/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/public/src/stores/sockets/socket.main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/src/stores/sockets/socket.main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sockets/socket_instance/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/sockets/socket_instance/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +120,7 @@
       <updated>1689350558051</updated>
       <workItem from="1689350559077" duration="12843000" />
       <workItem from="1689418398892" duration="9291000" />
-      <workItem from="1689778303349" duration="34676000" />
+      <workItem from="1689778303349" duration="35166000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -260,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690042739580</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Socket Auth">
+      <option name="closed" value="true" />
+      <created>1690044501077</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1690044501077</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

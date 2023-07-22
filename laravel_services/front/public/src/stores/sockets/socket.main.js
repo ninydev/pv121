@@ -26,6 +26,7 @@ export const useSocketMainStore = defineStore('socket.main', {
             //Реакция на любое сообщение
             this.socket.on('message', (data) => {
                 myLog('Catch message from server:', data);
+                toast.success( data)
             });
 
             this.socket.on('user.id.10', (data) => {
