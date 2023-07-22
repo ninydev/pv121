@@ -12,3 +12,5 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+// Он пустой - потому что все маршруты для страниц ушли на front.public и front.admin

@@ -13,7 +13,7 @@ onMounted( () => {
 <template>
   <header> Public 1 </header>
   <main id="main">
-    <RegisterForm></RegisterForm>
+    <RouterView></RouterView>
   </main>
   <footer> &copy; ItStep 2023 </footer>
 
