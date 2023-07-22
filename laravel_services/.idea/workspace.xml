@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Socket Auth">
+    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Socket by User Id">
+      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Services/Interfaces/ISocketService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Services/SocketService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/public/src/stores/sockets/socket.main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/src/stores/sockets/socket.main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sockets/socket_instance/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/sockets/socket_instance/index.js" afterDir="false" />
     </list>
@@ -55,6 +60,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/snap/phpstorm/345/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
@@ -120,7 +126,7 @@
       <updated>1689350558051</updated>
       <workItem from="1689350559077" duration="12843000" />
       <workItem from="1689418398892" duration="9291000" />
-      <workItem from="1689778303349" duration="35166000" />
+      <workItem from="1689778303349" duration="37183000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -266,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690044501077</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Socket by User Id">
+      <option name="closed" value="true" />
+      <created>1690045012622</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1690045012622</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +307,7 @@
     <MESSAGE value="Front Login beforeEach" />
     <MESSAGE value="Front Login for Admin" />
     <MESSAGE value="Socket Auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="Socket Auth" />
+    <MESSAGE value="Socket by User Id" />
+    <option name="LAST_COMMIT_MESSAGE" value="Socket by User Id" />
   </component>
 </project>

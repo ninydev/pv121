@@ -57,6 +57,9 @@ io.use((socket, next) => {
         console.debug('Расшифрованный токен:', decodedToken);
         const userId = decodedToken.sub; // Получаем Id пользователя
         socket.join('userId_' + userId); // Присоединяем его в персональную комнату
+
+        // Нужно понять - пользователь админ или нет, и если он админ - добавить его в комнату админов
+        socket.join('admins')
     } catch (err) {
         console.error('Ошибка расшифровки токена:', err.message);
     }
@@ -81,15 +84,17 @@ Promise.all([pubClient.connect(), subClient.connect()]).then(() => {
     io.listen(SERVER_PORT);
 });
 
-// Пинг сервера - для всех
+// Пинг сервера - для всех (пустое бессмысленное сообщение)
 setInterval(() =>{
     io.emit('ping', Date.now())
-}, 10000)
+}, 30000)
 
-// Пинг сервера для конкретного пользователя (всех его сокетов)
-setInterval(() =>{
-    io.to('userId_ad2bbd00-68cc-4c1f-8fac-92192882884d').emit('message', 'to user id')
-}, 10000)
-setInterval(() =>{
-    io.emit('message', 'to all')
-}, 10000)
+
+// setInterval(() =>{
+//     // Это сообщение увидит только конкретный пользователь
+//     // io.to('userId_ad2bbd00-68cc-4c1f-8fac-92192882884d').emit('message', 'to user id')
+//     // Это увидят все админы
+//     // io.to('admins').emit('message', 'to admins')
+//     // Это увидят все, кто подключен к серверу
+//     // io.emit('message', 'to all')
+// }, 10000)

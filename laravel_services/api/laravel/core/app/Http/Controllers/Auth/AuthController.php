@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 
 use App\Models\User;
+use App\Services\Interfaces\ISocketService;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -44,9 +45,10 @@ class AuthController extends Controller
         ]);
     }
 
-    public function register(Request $request)
+    public function register(Request $request, ISocketService $socketService)
     {
-        Cache::put("test", "test");
+        $socketService->to("Try Reg", 'admins');
+
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
