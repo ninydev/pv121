@@ -1,1 +1,222 @@
-<mxGraphModel><root><mxCell id="0"/><mxCell id="1" parent="0"/></root></mxGraphModel>
+<mxfile host="app.diagrams.net" modified="2023-07-26T17:19:44.814Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="21.6.5" etag="IosNCRHL62bAkGWdS2h6" type="device" pages="5">
+  <diagram id="7hRnZ_SPSgVyP6z8d2Cp" name="Первая версия">
+    <mxGraphModel dx="1255" dy="995" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TS3WV4J271p1W6goCSvP-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="50" width="280" height="770" as="geometry" />
+        </mxCell>
+        <mxCell id="Jcw2q9SIeRKJPQ8w0ekr-1" value="User&lt;br&gt;&lt;br&gt;Guest" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="140" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jcw2q9SIeRKJPQ8w0ekr-2" value="Read Posts" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jcw2q9SIeRKJPQ8w0ekr-3" value="Простой посетитель моего проекта может&lt;br&gt;&lt;br&gt;&lt;br&gt;- Читать лету из постов (от новых к старым)&lt;br&gt;- Читать 1 пост&lt;br&gt;&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="120" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Jcw2q9SIeRKJPQ8w0ekr-5" value="User&lt;br&gt;&lt;br&gt;Register" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="99" y="600" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jcw2q9SIeRKJPQ8w0ekr-8" value="Create&lt;br&gt;Update&lt;br&gt;Delete&lt;br&gt;&lt;br&gt;Posts" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="585" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jcw2q9SIeRKJPQ8w0ekr-9" value="Зарегистрированный пользователь может&lt;br&gt;&lt;br&gt;То же, что и простой пользователь&lt;br&gt;+ Создавать, редактировать и удалять свои посты&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="469" y="570" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Jcw2q9SIeRKJPQ8w0ekr-10" value="Зарегистрироваться" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jcw2q9SIeRKJPQ8w0ekr-11" value="Войти / Выйти" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="500" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TS3WV4J271p1W6goCSvP-1" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="729" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TS3WV4J271p1W6goCSvP-2" value="Post" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="729" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TS3WV4J271p1W6goCSvP-4" value="front.public" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8I4M-em-P-XzoJ73kZqy-1" value="front.public&lt;br&gt;db.mysql.main&lt;br&gt;api.laravel&lt;br&gt;store.minio" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="840" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="XtRmPUR-mlsTmgi3RpA7" name="Вторая версия">
+    <mxGraphModel dx="1255" dy="995" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hlF3vPeD05qImt0YN1FV-14" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="830" width="780" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-1" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFCC99;" vertex="1" parent="1">
+          <mxGeometry x="10" y="50" width="280" height="770" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-2" value="User&lt;br&gt;&lt;br&gt;Guest" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#FFCC99;" vertex="1" parent="1">
+          <mxGeometry x="100" y="140" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-3" value="Read Posts" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#FFCC99;" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-4" value="Простой посетитель моего проекта может&lt;br&gt;&lt;br&gt;&lt;br&gt;- Читать лету из постов (от новых к старым)&lt;br&gt;- Читать 1 пост&lt;br&gt;&lt;br&gt;" style="text;html=1;strokeColor=#FFCC99;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="120" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-5" value="User&lt;br&gt;&lt;br&gt;Register" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#FFCC99;" vertex="1" parent="1">
+          <mxGeometry x="99" y="600" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-6" value="Create&lt;br&gt;Update&lt;br&gt;Delete&lt;br&gt;&lt;br&gt;Posts" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#FFCC99;" vertex="1" parent="1">
+          <mxGeometry x="280" y="585" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-7" value="Зарегистрированный пользователь может&lt;br&gt;&lt;br&gt;То же, что и простой пользователь&lt;br&gt;+ Создавать, редактировать и удалять свои посты&lt;br&gt;" style="text;html=1;strokeColor=#FFCC99;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="469" y="570" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-8" value="Зарегистрироваться" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#FFCC99;" vertex="1" parent="1">
+          <mxGeometry x="190" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-9" value="Войти / Выйти" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#FFCC99;" vertex="1" parent="1">
+          <mxGeometry x="190" y="500" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-10" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#FFCC99;" vertex="1" parent="1">
+          <mxGeometry x="729" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-11" value="Post" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#FFCC99;" vertex="1" parent="1">
+          <mxGeometry x="729" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-12" value="front.public" style="text;html=1;strokeColor=#FFCC99;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-13" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="860" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-15" value="Read Users" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="840" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-16" value="Block / Unblock&lt;br&gt;User" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="840" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-17" value="Verify Email" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="270" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-18" value="Send Emails&lt;br&gt;Notifications" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="840" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-19" value="Админ может заблокировать вход пользователя&lt;br&gt;&lt;br&gt;Админ может заблокировать отображение поста&lt;br&gt;&lt;br&gt;При этом - будут отправлено сообщения на проверенную почту о смене статуса, или блокировке" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="359" y="1005" width="340" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-20" value="Reset Password" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="469" y="270" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-21" value="front.admin" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="699" y="840" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-22" value="Read Posts" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="925" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-23" value="Block / Unblock&lt;br&gt;Posts" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="925" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlF3vPeD05qImt0YN1FV-24" value="Send Emails&lt;br&gt;Notifications" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="925" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p1CiSIomebNhZbhnIuSg-1" value="Role" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="840" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="jjY3uvyV49mD7XxKQZXf" name="Третья версия">
+    <mxGraphModel dx="1255" dy="994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lO5pdwpZGPayUR_F__zC-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lO5pdwpZGPayUR_F__zC-2" value="Post" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EiiBtPrVYaJ8skKS3OU2-1" value="Like/Dislike" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EiiBtPrVYaJ8skKS3OU2-2" value="Comments" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EiiBtPrVYaJ8skKS3OU2-3" value="Зарегистрированный пользователь может&lt;br&gt;&lt;br&gt;- Поставить посту лайк, или убрать его&lt;br&gt;- Прокоментировать пост&lt;br&gt;- Он может изменить свой комментарий&lt;br&gt;- Добавить пост в список фаворитных или убрать его оттуда" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="530" width="550" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="EiiBtPrVYaJ8skKS3OU2-4" value="Favorites" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FfskzI19h2GgYntFOwzf-1" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="830" width="780" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="FfskzI19h2GgYntFOwzf-2" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="860" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FfskzI19h2GgYntFOwzf-3" value="Читать комментарии" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="840" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FfskzI19h2GgYntFOwzf-6" value="Админ может заблокировать комментарий&lt;br&gt;&lt;br&gt;Админ может удалить комментарий&lt;br&gt;&lt;br&gt;При этом - будут отправлено сообщения на проверенную почту о смене статуса, или блокировке" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="359" y="1005" width="340" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="FfskzI19h2GgYntFOwzf-11" value="Блокировать&lt;br&gt;/ разблокировать" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="840" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FfskzI19h2GgYntFOwzf-12" value="Удалять комментарии" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="840" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="XQwBl3K1KKHaqahVvJVE" name="Четвертая версия">
+    <mxGraphModel dx="1255" dy="994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZTjf1h75_7AjL524XDVA-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTjf1h75_7AjL524XDVA-2" value="Post" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTjf1h75_7AjL524XDVA-3" value="Like/Dislike" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTjf1h75_7AjL524XDVA-4" value="Comments" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTjf1h75_7AjL524XDVA-5" value="Favorites" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTjf1h75_7AjL524XDVA-6" value="Autor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="150" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTjf1h75_7AjL524XDVA-7" value="Other&lt;br&gt;&lt;br&gt;Users" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="300" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTjf1h75_7AjL524XDVA-8" value="В момент, когда пользователь ставит лайк или комментирует пост&lt;br&gt;&lt;br&gt;сообщать автору на почту - о том, что его пост прокомментировали&lt;br&gt;&lt;br&gt;Сообщать автору по socket что его пост прокомеентировали&lt;br&gt;Сообщать всем другим - у кого этот пост открыт - что появился комментарий или появился лайк" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="530" width="550" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Tn6bhXKZZunoeXPRTsb1-1" value="redis&lt;br&gt;sockets" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="750" y="620" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="kqd1zZnROnK07chVA0KU" name="пятая версия">
+    <mxGraphModel dx="1255" dy="995" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MoQYmF4AaV46_yK9Eote-1" value="Почту через очереди&lt;br&gt;&lt;br&gt;Создаем события&lt;br&gt;&lt;br&gt;Кеширование через redis..." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="260" width="330" height="290" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
