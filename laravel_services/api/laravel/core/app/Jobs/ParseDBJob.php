@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Mail\ParseDB\MailParseDBJobSuccess;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -9,6 +10,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class ParseDBJob implements ShouldQueue
 {
@@ -33,5 +35,11 @@ class ParseDBJob implements ShouldQueue
         // Вот тут что то происходит
         // КАК сообщать из фона о том, что тут не так?
         Log::debug($this->jobId . " : " . $this->someVal);
+
+        // Можно отправить письмо ???
+        // Mail::to('oleksandr.nykytin@tech.lab325.com')->send(new MailParseDBJobSuccess());
+
+
+
     }
 }

@@ -20,6 +20,7 @@ onMounted( () => {
         <ul>
           <li><RouterLink to="/">Главная</RouterLink></li>
           <li><RouterLink to="/users">Пользователи</RouterLink></li>
+          <li><RouterLink to="/job"> Фоновые задачи </RouterLink></li>
         </ul>
 
 

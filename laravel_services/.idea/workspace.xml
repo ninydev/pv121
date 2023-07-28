@@ -4,13 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Connect MinIO">
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Jobs/ParseDBJobController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Jobs/ParseDBJob.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/database/migrations/2023_07_28_161043_create_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/database/migrations/2023_07_28_164828_create_failed_jobs_table.php" afterDir="false" />
+    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Job">
+      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Mail/ParseDB/MailParseDBJobSuccess.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/laravel/core/resources/views/emails/jobs/parse_db/success.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/laravel/core/resources/views/emails/jobs/parse_db/success_text.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/admin/src/stores/startJob.store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/admin/src/views/JobView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/laravel/core/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Jobs/ParseDBJobController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Jobs/ParseDBJobController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/TestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Users/AdminUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Users/AdminUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Users/PublicUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Users/PublicUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/PreventRequestsDuringMaintenance.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/TrimStrings.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/TrustHosts.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/TrustHosts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/ValidateSignature.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/ValidateSignature.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Jobs/ParseDBJob.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Jobs/ParseDBJob.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Services/Interfaces/ISocketService.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Services/Interfaces/ISocketService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Services/SocketService.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Services/SocketService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/app/Traits/Uuids.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/app/Traits/Uuids.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admin/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admin/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/admin/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +55,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
-        <option value="JavaScript File" />
         <option value="Vue Composition API Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -81,6 +112,9 @@
       <recent name="$PROJECT_DIR$/front/public/src/components/forms/auth" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/laravel/core/resources/views/emails/jobs/parse_db" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="SwaggerCodegen">
@@ -129,7 +163,7 @@
       <workItem from="1690374392019" duration="757000" />
       <workItem from="1690378802873" duration="6977000" />
       <workItem from="1690462259898" duration="983000" />
-      <workItem from="1690557336336" duration="4134000" />
+      <workItem from="1690557336336" duration="5506000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -323,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690393441596</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Job">
+      <option name="closed" value="true" />
+      <created>1690563216657</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1690563216657</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +396,7 @@
     <MESSAGE value="Socket by User Id" />
     <MESSAGE value="Socket from Laravel" />
     <MESSAGE value="Connect MinIO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connect MinIO" />
+    <MESSAGE value="Job" />
+    <option name="LAST_COMMIT_MESSAGE" value="Job" />
   </component>
 </project>
