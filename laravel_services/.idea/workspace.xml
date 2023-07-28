@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Connect MinIO">
-      <change afterPath="$PROJECT_DIR$/api/laravel/core/example.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Jobs/ParseDBJobController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Jobs/ParseDBJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/laravel/core/database/migrations/2023_07_28_161043_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/laravel/core/database/migrations/2023_07_28_164828_create_failed_jobs_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.env" beforeDir="false" afterPath="$PROJECT_DIR$/example.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -124,6 +128,8 @@
       <workItem from="1689778303349" duration="38620000" />
       <workItem from="1690374392019" duration="757000" />
       <workItem from="1690378802873" duration="6977000" />
+      <workItem from="1690462259898" duration="983000" />
+      <workItem from="1690557336336" duration="4134000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -335,6 +341,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="init laravel" />
     <MESSAGE value="Auth JWT in php" />

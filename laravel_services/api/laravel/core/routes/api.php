@@ -30,3 +30,5 @@ Route::controller(AuthController::class)->group(function () {
 Route::get('admin/users', [AdminUserController::class, 'index'])->name('api.admin.users.index');
 
 Route::get('test', [\App\Http\Controllers\TestController::class,'test'])->name('test');
+
+Route::get('job', [\App\Http\Controllers\Jobs\ParseDBJobController::class,'startJob'])->name('startJob');
