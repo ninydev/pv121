@@ -20,6 +20,25 @@ services:
             - db.mysql.main
             - redis.socket
 
+    jobs.laravel:
+        build:
+            context: ./api/laravel/core
+            dockerfile: Dockerfile
+        command: sh -c "/var/www/html/artisan queue:work"
+        volumes:
+            - './api/laravel/core:/var/www/html'
+        extra_hosts:
+            - 'host.docker.internal:host-gateway'
+        networks:
+            - pv121
+        environment:
+            - NAME=jobs.laravel
+        env_file:
+            - .env
+        depends_on:
+            - db.mysql.main
+            - api.laravel
+
     redis.socket:
         image: 'redis:alpine'
         volumes:
