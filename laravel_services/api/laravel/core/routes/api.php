@@ -32,3 +32,5 @@ Route::get('admin/users', [AdminUserController::class, 'index'])->name('api.admi
 Route::get('test', [\App\Http\Controllers\TestController::class,'test'])->name('test');
 
 Route::get('job', [\App\Http\Controllers\Jobs\ParseDBJobController::class,'startJob'])->name('startJob');
+
+Route::get('posts/read', [\App\Http\Controllers\Posts\ReadPostController::class, 'index'])->name('post.read.all');
