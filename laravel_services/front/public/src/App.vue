@@ -12,6 +12,12 @@ onMounted( () => {
 
 <template>
   <header> Public 1 </header>
+  <nav>
+    <ul>
+      <li><RouterLink to="/">Главная</RouterLink></li>
+      <li><RouterLink to="/posts">Посты </RouterLink></li>
+    </ul>
+  </nav>
   <main id="main">
     <RouterView></RouterView>
   </main>

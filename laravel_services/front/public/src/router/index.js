@@ -16,6 +16,11 @@ const router = createRouter({
       component: () => import('@/views/SocketView.vue')
     },
     {
+      path: '/posts',
+      name: 'posts',
+      component: () => import('@/views/PostsView.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       meta: {auth: true}, // На єту страницу нельзя ходить без логина
