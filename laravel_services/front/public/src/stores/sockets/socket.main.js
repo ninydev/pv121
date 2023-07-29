@@ -47,12 +47,40 @@ export const useSocketMainStore = defineStore('socket.main', {
             })
 
         },
+
+        /**
+         * Добавить обработчик события
+         * @param eventName
+         * @param callBack
+         */
         on(eventName, callBack){
             this.socket.on(eventName, callBack);
 
         },
+
+        /**
+         * Убрать обработчик события
+         * @param eventName
+         * @param callBack
+         */
         off(eventName, callBack){
             this.socket.off(eventName, callBack)
+        },
+
+        /**
+         * подключиться к комнате
+         * @param roomName
+         */
+        join(roomName) {
+            this.socket.emit('joinRoom', roomName)
+        },
+
+        /**
+         * Покинуть комнату
+         * @param roomName
+         */
+        leave(roomName) {
+            this.socket.emit('leaveRoom', roomName)
         }
     }
 })

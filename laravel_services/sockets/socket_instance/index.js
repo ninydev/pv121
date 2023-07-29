@@ -79,6 +79,16 @@ Promise.all([pubClient.connect(), subClient.connect()]).then(() => {
         socket.on('disconnect', data => {
             console.debug('disconnect: ' + socket.handshake.address);
         })
+
+        socket.on('joinRoom', (roomName) => {
+            socket.join(roomName);
+            console.debug(`Socket ${socket.id} joined room: ${roomName}`);
+        });
+
+        socket.on('leaveRoom', (roomName) => {
+            socket.leave(roomName);
+            console.debug(`Socket ${socket.id} leaved room: ${roomName}`);
+        });
     })
 
     io.listen(SERVER_PORT);

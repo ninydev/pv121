@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Posts">
-      <change afterPath="$PROJECT_DIR$/front/public/src/components/posts/PostListItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/components/posts/PostsList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/stores/readPosts.store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/public/src/views/PostsView.vue" afterDir="false" />
+    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Posts front">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/public/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/public/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/public/src/components/posts/PostListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/src/components/posts/PostListItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/public/src/stores/sockets/socket.main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/src/stores/sockets/socket.main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sockets/socket_instance/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/sockets/socket_instance/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +133,7 @@
       <workItem from="1690557336336" duration="7325000" />
       <workItem from="1690611336077" duration="26000" />
       <workItem from="1690613162898" duration="5160000" />
-      <workItem from="1690642870438" duration="4698000" />
+      <workItem from="1690642870438" duration="5836000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -362,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690647443084</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Posts front">
+      <option name="closed" value="true" />
+      <created>1690648961034</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1690648961034</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,6 +400,7 @@
     <MESSAGE value="Connect MinIO" />
     <MESSAGE value="Job" />
     <MESSAGE value="Posts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Posts" />
+    <MESSAGE value="Posts front" />
+    <option name="LAST_COMMIT_MESSAGE" value="Posts front" />
   </component>
 </project>
