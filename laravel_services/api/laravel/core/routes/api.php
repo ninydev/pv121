@@ -34,3 +34,5 @@ Route::get('test', [\App\Http\Controllers\TestController::class,'test'])->name('
 Route::get('job', [\App\Http\Controllers\Jobs\ParseDBJobController::class,'startJob'])->name('startJob');
 
 Route::get('posts/read', [\App\Http\Controllers\Posts\ReadPostController::class, 'index'])->name('post.read.all');
+
+Route::get('post/like/{postId}', [\App\Http\Controllers\Posts\PostLikesController::class,'like'])->name('post.like');

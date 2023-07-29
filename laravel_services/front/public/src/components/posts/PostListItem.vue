@@ -2,6 +2,7 @@
 import {defineProps, onMounted, onUnmounted, ref} from 'vue';
 import {useSocketMainStore} from "@/stores/sockets/socket.main";
 import {toast} from "vue3-toastify";
+import myLog from "@/helpers/myLog";
 
 const {post}  = defineProps({
   post: {
@@ -18,19 +19,31 @@ const useSocket = useSocketMainStore()
  * @param newCount
  */
 const onChangeLikeCount = (newCount) => {
+  toast.info(newCount)
+  myLog(newCount)
   like_count.value = newCount
+}
+
+/**
+ * Реакция на изменение комментариев
+ * @param data
+ */
+const onChangeComments = (data) => {
+  myLog(data)
 }
 
 // Когда мы показываем пост - мы входим в комнату - про обновления данных по этому посту
 onMounted(() => {
   useSocket.join('post.updates.' + post.id)
-  useSocket.on('post.update.likes' + post.id, onChangeLikeCount)
+  useSocket.on('post.update.likes.' + post.id, onChangeLikeCount)
+  useSocket.on('post.update.comments.' + post.id, onChangeComments)
 })
 
 // Когда компонент уходит - мы покидаем комнату
 onUnmounted( () => {
   useSocket.leave('post.updates.' + post.id)
-  useSocket.off('post.update.likes' + post.id, onChangeLikeCount)
+  useSocket.off('post.update.likes.' + post.id, onChangeLikeCount)
+  useSocket.off('post.update.comments.' + post.id, onChangeComments)
 })
 
 

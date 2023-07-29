@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Posts front">
+    <list default="true" id="3083af1c-a7b9-4046-b6fe-c675728312e5" name="Changes" comment="Posts front sockets">
+      <change afterPath="$PROJECT_DIR$/api/laravel/core/app/Http/Controllers/Posts/PostLikesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/laravel/core/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/laravel/core/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/public/src/components/posts/PostListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/src/components/posts/PostListItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/public/src/stores/sockets/socket.main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/src/stores/sockets/socket.main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sockets/socket_instance/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/sockets/socket_instance/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +133,7 @@
       <workItem from="1690557336336" duration="7325000" />
       <workItem from="1690611336077" duration="26000" />
       <workItem from="1690613162898" duration="5160000" />
-      <workItem from="1690642870438" duration="5836000" />
+      <workItem from="1690642870438" duration="7373000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -367,7 +367,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690648961034</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Posts front sockets">
+      <option name="closed" value="true" />
+      <created>1690650115331</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1690650115331</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,6 +409,7 @@
     <MESSAGE value="Job" />
     <MESSAGE value="Posts" />
     <MESSAGE value="Posts front" />
-    <option name="LAST_COMMIT_MESSAGE" value="Posts front" />
+    <MESSAGE value="Posts front sockets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Posts front sockets" />
   </component>
 </project>
